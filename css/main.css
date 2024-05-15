@@ -1,0 +1,20 @@
+:root {
+    --primary-color: #260197;
+    --secondary-color: #071251; 
+    --tertiary-color: #E65C19; 
+    --quaternary-color: #0D6811;
+    --quinary-color: #B51B75;  
+     
+/* rgb color  */
+
+--primary-color-rgba: rgba(58, 81, 211, 0.8); /* 40% opacity */
+
+
+    /* Text Color */
+    --text-color: #e9ecef;
+    
+    /* card text color */
+    --main-content-color: #5b6e88;
+    
+  }
+  
