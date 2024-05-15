@@ -13,12 +13,7 @@ html {
   padding: 0px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
+
 .h1,
 .h2,
 .h3,
@@ -125,31 +120,22 @@ a:focus {
   left: 0;
   z-index: 11;
   width: 260px;
-  overflow: auto;
+  /* overflow: auto; */
+  overflow-y: scroll;
+  border-right: 1px solid var(--secondary-color);
   transition: all 0.3s;
   background: var(--primary-color);
-  box-shadow: 0 10px 30px -12px rgb(0 0 0 / 42%),
-    0 4px 25px 0px rgb(0 0 0 / 12%), 0 8px 10px -5px rgb(0 0 0 / 20%);
+ 
+   
 }
 
-#sidebar::-webkit-scrollbar {
-  width: 5px;
-  border-radius: 10px;
-  background: var(--secondary-color);
-  display: none;
+#sidebar::-webkit-scrollbar{
+width: 4px;
+  
 }
-#sidebar::-webkit-scrollbar-thumbs {
-  width: 5px;
-  border-radius: 10px;
-  background-color: #333;
-  display: none;
-}
+#sidebar::-webkit-scrollbar-thumb{
+  background-color: var(--primary-color-rgba);
 
-#sidebar:hover::-webkit-scrollbar {
-  display: block;
-}
-#sidebar:hover::-webkit-scrollbar-thumbs {
-  display: block;
 }
 
 #sidebar .sidebar-header {
@@ -172,18 +158,17 @@ a:focus {
   margin-right: 10px;
 }
 
-#sidebar ul li {
-  padding: 2px 7px;
-}
 
 #sidebar ul li.active > a {
   color: white;
   background-color: var(--secondary-color);
+  width: 100%;
 }
 
 #sidebar ul li a:hover {
   color: white;
   background-color: var(--primary-color-rgba);
+  width: 100%;
 }
 
 .dropdown-toggle::after {
@@ -209,6 +194,9 @@ a:focus {
   font-weight: 400;
   display: block;
   color: white;
+
+
+  
 }
 
 #sidebar ul li a span {
@@ -242,6 +230,7 @@ a:focus {
   width: 100%;
   z-index: 9;
   position: relative;
+  
 }
 
 .main-content {
@@ -346,6 +335,11 @@ a:focus {
   transform: translate3d(0, 0, 0);
   opacity: 1;
   visibility: visible;
+  padding-left: 20px;
+
+}
+.submenu{
+  margin-left: 43px;
 }
 
 .dropdown-menu li > a {
@@ -355,6 +349,7 @@ a:focus {
   border-radius: 2px;
   font-weight: 400;
   transition: all 150ms linear;
+
 }
 
 .navbar-nav > .active > a:focus {
@@ -441,6 +436,7 @@ a:focus {
     padding: 15px 15px;
     font-size: 30px;
     border-radius: 10px;
+    align-items: center;
   }
   
   .card-icon-box2 {
@@ -449,6 +445,7 @@ a:focus {
     padding: 15px 15px;
     font-size: 30px;
     border-radius: 10px;
+    align-items: center;
   }
   
   .card-icon-box3 {
@@ -457,6 +454,7 @@ a:focus {
     padding: 15px 15px;
     font-size: 30px;
     border-radius: 10px;
+    align-items: center;
   }
   
   .card-icon-box4 {
@@ -465,6 +463,7 @@ a:focus {
     padding: 15px 15px;
     font-size: 30px;
     border-radius: 10px;
+    align-items: center;
   }
   
   .card-white {
