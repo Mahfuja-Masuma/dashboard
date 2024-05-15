@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-        <title> dashboard
+        <title> dashboard table
 		</title>
 	    <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -308,120 +308,147 @@
                
       <div class="row">
     <div class="col-md-12">
-        <div class="card b-radius--10">
-            <div class="card-body p-0">
-                <div class="table-responsive-sm table-responsive">
-                    <div class="table-wrapper">
-                        <div class="table-title">
-                            <div class="row">
-                                <div class="d-flex justify-content-between">
-                                    <div>
-                                        <h4>Automatic Gateways</h4>
-                                    </div>
-                                    <div class="inputgroup">
-                                        <input type="text" placeholder="Search...">
-                                        <i class="fa-solid fa-magnifying-glass"></i>
-                                    </div>
-                                </div>
-                            </div>
+        <div class="table-wrapper">
+            <div class="table-title">
+                <div class="row">
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <h4>Automatic Gateways</h4>
                         </div>
-                        <table class="table">
-                            <thead>
-                                <tr class="table-head">
-                                    <th>Name</th>
-                                    <th>Email</th>
-                                    <th>Address</th>
-                                    <th>Phone</th>
-                                    <th>Actions</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Thomas Hardy</td>
-                                    <td>ThomasHardy@gmail.com</td>
-                                    <td>90r parkdground poland Usa.</td>
-                                    <td>(78-582552-9)</td>
-                                    <td class="d-flex gap-2">
-                                        <a href="#editEmployeeModal" class="edit" data-toggle="modal">
-                                            <i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i>
-                                            Edit
-                                        </a>
-                                        <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
-                                            <i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i>
-                                            Delete
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Dominique Perrier</td>
-                                    <td>dominiquePerrier@gmail.com</td>
-                                    <td>90r ser57, Berlin poland Bermany.</td>
-                                    <td>(78-5235-2-9)</td>
-                                    <td class="d-flex gap-2">
-                                        <a href="#editEmployeeModal" class="edit" data-toggle="modal">
-                                            <i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i>
-                                            Edit
-                                        </a>
-                                        <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
-                                            <i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i>
-                                            Delete
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Marai Andres</td>
-                                    <td>MarariAndres@gmail.com</td>
-                                    <td>90r ser57, Berlin poland Bermany.</td>
-                                    <td>(78-239-669)</td>
-                                    <td class="d-flex gap-2">
-                                        <a href="#editEmployeeModal" class="edit" data-toggle="modal">
-                                            <i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i>
-                                            Edit
-                                        </a>
-                                        <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
-                                            <i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i>
-                                            Delete
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Vishweb Design</td>
-                                    <td>vishwebdesign@gmail.com</td>
-                                    <td>B-2 ser57 Nodia East Delhi,India.</td>
-                                    <td>(78-239-669)</td>
-                                    <td class="d-flex gap-2">
-                                        <a href="#editEmployeeModal" class="edit" data-toggle="modal">
-                                            <i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i>
-                                            Edit
-                                        </a>
-                                        <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
-                                            <i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i>
-                                            Delete
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Vishwajeet Kumar</td>
-                                    <td>vishkumar234@gmail.com</td>
-                                    <td>B-2 ser57 Nodia East Delhi,India.</td>
-                                    <td>(78-555-229)</td>
-                                    <td class="d-flex gap-2">
-                                        <a href="#editEmployeeModal" class="edit" data-toggle="modal">
-                                            <i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i>
-                                            Edit
-                                        </a>
-                                        <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
-                                            <i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i>
-                                            Delete
-                                        </a>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <div class="inputgroup">
+                            <input type="text" placeholder="Search...">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
                     </div>
                 </div>
             </div>
+            <table class="table">
+                <thead>
+                    <tr class="table-head">
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Address</th>
+                        <th>Phone</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Thomas Hardy</td>
+                        <td>ThomasHardy@gmail.com</td>
+                        <td>90r parkdground poland Usa.</td>
+                        <td>(78-582552-9)</td>
+                        <td class="d-flex gap-2">
+                            <a href="#editEmployeeModal" class="edit" data-toggle="modal">
+                                <i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i>
+                                Edit
+                            </a>
+                            <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
+                                <i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i>
+                                Delete
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Dominique Perrier</td>
+                        <td>dominiquePerrier@gmail.com</td>
+                        <td>90r ser57, Berlin poland Bermany.</td>
+                        <td>(78-5235-2-9)</td>
+                        <td class="d-flex gap-2">
+                            <a href="#editEmployeeModal" class="edit" data-toggle="modal">
+                                <i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i>
+                                Edit
+                            </a>
+                            <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
+                                <i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i>
+                                Delete
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Marai Andres</td>
+                        <td>MarariAndres@gmail.com</td>
+                        <td>90r ser57, Berlin poland Bermany.</td>
+                        <td>(78-239-669)</td>
+                        <td class="d-flex gap-2">
+                            <a href="#editEmployeeModal" class="edit" data-toggle="modal">
+                                <i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i>
+                                Edit
+                            </a>
+                            <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
+                                <i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i>
+                                Delete
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Vishweb Design</td>
+                        <td>vishwebdesign@gmail.com</td>
+                        <td>B-2 ser57 Nodia East Delhi,India.</td>
+                        <td>(78-239-669)</td>
+                        <td class="d-flex gap-2">
+                            <a href="#editEmployeeModal" class="edit" data-toggle="modal">
+                                <i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i>
+                                Edit
+                            </a>
+                            <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
+                                <i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i>
+                                Delete
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Vishwajeet Kumar</td>
+                        <td>vishkumar234@gmail.com</td>
+                        <td>B-2 ser57 Nodia East Delhi,India.</td>
+                        <td>(78-555-229)</td>
+                        <td class="d-flex gap-2">
+                            <a href="#editEmployeeModal" class="edit" data-toggle="modal">
+                                <i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i>
+                                Edit
+                            </a>
+                            <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
+                                <i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i>
+                                Delete
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Vishwajeet Kumar</td>
+                        <td>vishkumar234@gmail.com</td>
+                        <td>B-2 ser57 Nodia East Delhi,India.</td>
+                        <td>(78-555-229)</td>
+                        <td class="d-flex gap-2">
+                            <a href="#editEmployeeModal" class="edit" data-toggle="modal">
+                                <i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i>
+                                Edit
+                            </a>
+                            <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
+                                <i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i>
+                                Delete
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Vishwajeet Kumar</td>
+                        <td>vishkumar234@gmail.com</td>
+                        <td>B-2 ser57 Nodia East Delhi,India.</td>
+                        <td>(78-555-229)</td>
+                        <td class="d-flex gap-2">
+                            <a href="#editEmployeeModal" class="edit" data-toggle="modal">
+                                <i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i>
+                                Edit
+                            </a>
+                            <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
+                                <i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i>
+                                Delete
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
+
     </div>
 </div>
 
