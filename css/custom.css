@@ -691,13 +691,12 @@ width: 4px;
 
 
 .table-wrapper {
-
-  margin:10px 0px 30px 0px;
+   padding: 20px 25px;
+   margin:6px 0px 40px 0px;
   width:100%;
   overflow:auto;
-  border-radius: 3px;
- 
 }
+
 
 .table-title {
 color: var(--main-content-color);
@@ -757,13 +756,40 @@ margin-top: 2px;
 }
 
 
+
+.table {
+  width: 100%;
+  border-collapse: separate; /* Ensure border-radius works */
+  border-spacing: 0; /* Remove spacing between table cells */
+  border-radius: 5px;
+  overflow: auto; /* Ensure border radius is applied to overflow content */
+ 
+}
+
+.table thead tr:first-child th:first-child {
+  border-top-left-radius: 5px;
+}
+
+.table thead tr:first-child th:last-child {
+  border-top-right-radius: 5px;
+}
+
+.table tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 5px;
+}
+
+.table tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 5px;
+}
+
 /* Table Head Background Color */
 table.table thead .table-head th {
   background-color: var(--primary-color) !important;
   color: #fff;
   padding-top: 10px;
   padding-bottom: 10px;
-  white-space: nowrap; /* Prevent text wrapping */
+  
+  
 }
 
 /* Table Cells and Header Styles */
@@ -771,16 +797,19 @@ table.table tr th, table.table tr td {
   padding: 6px 8px;
   font-size: 14px;
   vertical-align: middle;
-  white-space: nowrap; /* Prevent text wrapping */
+  white-space: normal; /* Allow text wrapping */
+  word-wrap: break-word; /* Break long words */
+ 
 }
 
 table.table tr th:first-child {
-  width: 100px;
+  width: auto; /* Adjust to fit content */
 }
 
 table.table tr th:last-child {
-  width: 150px;
+  width: auto; /* Adjust to fit content */
 }
+
 
 /* Table Header Links */
 table.table th a {
@@ -821,7 +850,7 @@ table.table td a:hover {
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
   padding: 2px;
-  border-radius: 2px;
+  border-radius: 4px;
   background: transparent; /* No background color */
 }
 
@@ -837,7 +866,7 @@ table.table td a:hover {
   color: #F44336;
   border: 2px solid #F44336;
   padding: 2px;
-  border-radius: 2px;
+  border-radius: 4px;
   background: transparent; /* No background color */
 }
 
@@ -846,15 +875,13 @@ table.table td a:hover {
   color: #fff;
 }
 
-/* Delete Link in Table */
-table.table td a.delete {
-  color: #F44336;
-}
+
 
 /* Table Data Icons */
 table.table td i {
   font-size: 20px;
 }
+
 
 
 /* Responsive Design */
@@ -879,7 +906,6 @@ table.table td i {
   }
 }
 
-
 /* Modal styles */
 .modal .modal-dialog {
 max-width: 400px;
@@ -896,6 +922,7 @@ border-radius: 0 0 3px 3px;
 }
 .modal .modal-title {
   display: inline-block;
+  margin-right: 20px;
 }
 .modal .form-control {
 border-radius: 2px;
@@ -906,9 +933,19 @@ border-color: #dddddd;
 resize: vertical;
 }
 .modal .btn {
-border-radius: 2px;
-min-width: 100px;
+  border-radius: 4px;
+  min-width: 100px;
+  background-color: var(--primary-color);
+  color: white;
 }	
+.modal .close {
+  border-radius: 4px;
+  padding: 0px 8px;
+  background-color: var(--quaternary-color);
+  color: white;
+  font-size: 14px;
+
+}
 .modal form label {
 font-weight: normal;
 }	
