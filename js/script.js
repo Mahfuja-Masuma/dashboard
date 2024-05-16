@@ -1,30 +1,24 @@
-// const sidebarToggle = document.querySelector("#sidebar-toggle")
-// sidebarToggle.addEventListener("click", function(){
-//     document.querySelector("#sidebar").classList.toggle("collapsed");
-// })
+
+
 
 // document.addEventListener("DOMContentLoaded", function() {
-//     var sidebarLinks = document.querySelectorAll(".sidebar-link");
+//     const sidebar = document.getElementById("sidebar");
+//     const sidebarCollapseMobile = document.getElementById("sidebarCollapseMobile");
+//     const bodyOverlay = document.querySelector(".body-overlay");
   
-//     sidebarLinks.forEach(function(link) {
-//       link.addEventListener("click", function(event) {
-//         // Remove active class from all sidebar items
-//         document.querySelectorAll('.sidebar-item.active').forEach(function(item) {
-//           item.classList.remove('active');
-//         });
+//     // Toggle sidebar active state when button is clicked
+//     sidebarCollapseMobile.addEventListener("click", function() {
+//       sidebar.classList.toggle("active");
+//       bodyOverlay.classList.toggle("active"); // Add an overlay for better UX
+//     });
   
-//         // Add active class to the clicked sidebar item
-//         this.closest(".sidebar-item").classList.add("active");
-//       });
+//     // Close sidebar when body overlay is clicked
+//     bodyOverlay.addEventListener("click", function() {
+//       sidebar.classList.remove("active");
+//       bodyOverlay.classList.remove("active");
 //     });
 //   });
-
-
-
-
-//   // table content: 
-
-
+ 
 
   
   
