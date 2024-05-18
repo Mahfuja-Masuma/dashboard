@@ -871,11 +871,13 @@ table.table th a {
   outline: none !important;
   display: flex;
   font-size: 14px;
+  text-align: center;
 }
 
 table.table th i {
   font-size: 20px;
   cursor: pointer;
+  text-align: center;
   
 }
 
@@ -910,6 +912,7 @@ table.table td a:hover {
   border-radius: 4px;
   background: transparent;
   text-align: center;
+  align-items: center;
 
 }
 
