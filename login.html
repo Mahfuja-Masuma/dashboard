@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- <link rel="stylesheet" href="/css/tailwind.css"> -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                'primary':'#260197',
+                'secondary':'#071251',
+                'tertiary':'#E65C19',
+                'quaternary':'#0D6811',
+                'quinary':'#B51B75',
+              },
+              fontFamily: {
+                'poppins': ['Poppins', 'sans-serif'],
+                'roboto': ['Roboto', 'sans-serif'],
+        },
+            }
+          }
+        }
+      </script>
+</head>
+<body>
+<div class="flex items-center justify-center min-h-screen bg-primary">
+  <div class="relative flex flex-col m-6 space-y-8 bg-white shadow-2xl rounded-2xl
+  md:flex-row md:space-y-0">
+    <div class=" flex flex-col justify-center p-8 md:p-14">
+    <h1 class="mb-3 text-4xl font-bold text-secondary">Welcome TO Our Website</h1>
+    <h2 class="text-xl text-primary font-bold mb-6 capitalize text-center">Login here</h2>
+    <form>
+        <input class="outline-none border border-primary p-2 rounded-md w-full"  id="email" type="text" placeholder="Enter your email">
+        <input class="outline-none border border-primary p-2 rounded-md w-full mt-4" id="password" type="password" placeholder="Enter your password">
+        <div class="flex justify-between mt-2">
+        <p>Don't have an account?<a href="file:///D:/amrit/dashboard/registration.html" class="text-blue-700"> Sign up Here</a></p>
+        <a href="#" class="text-red-600 ">Forgot password</a>
+        </div>
+        <button class="outline-none border bg-primary p-2 text-white rounded-md w-full mt-5 hover:bg-secondary transition-all">Login</button>   
+    </form>
+   
+
+    </div>
+    
+    <div class="relative">
+      <img class="w-[400px] h-full hidden rounded-r-2xl md:block object-cover" src="img/GettyImages-1448734171.jpg" alt="login image">
+
+    </div>
+  </div>
+</div>
+</body> 
+</html>
