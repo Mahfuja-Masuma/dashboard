@@ -306,44 +306,42 @@
 			
 	      <!-- =================body main part================== -->
 
-        <div class="body-wrapper" id="currrency">
+          <div class="body-wrapper" id="currrency">
             <div class="bodywrapper__inner">
 
-                <div class="d-flex mb-30 flex-wrap gap-3 justify-content-between align-items-center">
+                <div class="d-flex flex-wrap gap-3 justify-content-between align-items-center">
     <h6 class="page-title">Create Currency</h6>
-    <div class="currrency-btn d-flex flex-wrap justify-content-end gap-2 align-items-center breadcrumb-plugins">
-        <a href="file:///D:/amrit/dashboard/exchange.html" class="currrency-btn1">
-            <i class="fa-solid fa-rotate-left"></i> Back</a>
+    <div class="d-flex flex-wrap justify-content-end gap-2 align-items-center breadcrumb-plugins">
+            <a href="https://script.viserlab.com/changalab/demo/admin/currency/index" class="currrency-btn1">
+                <i class="fa-solid fa-rotate-left"></i> Back</a>
     </div>
 </div>
 
-         <form action="https://script.viserlab.com/changalab/demo/admin/currency/save" method="POST" enctype="multipart/form-data">
-        <input type="hidden" name="_token" value="jYXl4b76Lz9Z4bO1yCDPdWcBQvOcw5pU1mKM4n9p">        <div class="row gy-4">
-            
+                    <form action="https://script.viserlab.com/changalab/demo/admin/currency/save" method="POST" enctype="multipart/form-data">
+        <input type="hidden" name="_token" value="VEVTNCJl2odXdIETN8alOkVXe1HV65cfCDBR7Jwe">        <div class="row gy-4">
             <div class="row gy-4">
             <div class="col-lg-12">
                 <div class="card">
                     <div class="card-body">
-                        
                         <div class="row justify-content-center">
                             <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-3">
                                 <div class="thumb mb-2">
                                     <div class="avatar-preview">
-                                        <div class="profilePicPreview" style="background-image: url('https://script.viserlab.com/changalab/demo/placeholder-image/400x400');">
+                                        <div class="profilePicPreview" style="background-image: url('https://script.viserlab.com/changalab/demo/placeholder-image/400x400')">
                                         </div>
                                     </div>
                                     <div class="avatar-edit">
                                         <input type="file" name="image" class="profilePicUpload" id="image" accept=".png, .jpg, .jpeg">
-                                        <label for="image" class="bg-primary"><i class="fa-solid fa-pencil"></i></label>
+                                        <label for="image" class="bg-primary"><i class="fa-solid fa-pen"></i></label>
                                     </div>
                                 </div>
                                 <small class="mt-3 text-muted text-small">Supported files: <b>png, jpeg,jpg.</b>
-                                    Image will be resized into 400x400 px </small>
+                                    Image will be resized into 400x400 px                                </small>
                             </div>
 
-                             <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8 col-xxl-9">
+                            <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8 col-xxl-9">
                                 <div class="row">
-                                    <div  class="col-xxl-4 col-sm-12">
+                                    <div class="col-xxl-4 col-sm-12">
                                         <div class="form-group">
                                             <label for="name" class="required">Currency Name</label>
                                             <input type="text" class="form-control" name="name" value="" required="" autocomplete="off" id="name">
@@ -362,32 +360,79 @@
                                             <label for="payment_gateway" class="required"> Payment Gateway</label> <i class="la la-info-circle" title="" data-bs-original-title="User will send the money by this payment gateway." aria-label="User will send the money by this payment gateway."></i>
                                             <select name="payment_gateway" class="form-control" required="" id="payment_gateway">
                                                 <option value="0">Manual</option>
-                                                <option value="1"> Paypal</option>
-                                                <option value="2">Perfect Money</option>
-                                                <option value="3">Stripe Hosted</option>
-                                                <option value="4">Skrill</option>
-                                                <option value="5">PayTM</option>
-                                                <option value="6">Payeer</option>
-                                                <option value="7">PayStack</option>
-                                                <option value="8">Manual</option>
-                                                <option value="9"> Paypal</option>
-                                                <option value="10">Perfect Money</option>
-                                                <option value="11">Stripe Hosted</option>
-                                                <option value="12">Skrill</option>
-                                                <option value="13">PayTM</option>
-                                                <option value="14">Payeer</option>
-                                                <option value="15">PayStack</option>
-                                                <option value="16">PayStack</option>
-                                                <option value="17">Manual</option>
-                                                <option value="18"> Paypal</option>
-                                                <option value="19">Perfect Money</option>
-                                                <option value="20">Stripe Hosted</option>
-                                                <option value="21">Skrill</option>
-                                                <option value="22">PayTM</option>
-                                                <option value="23">Payeer</option>
-                                                <option value="24">PayStack</option>
-                                               
-                                            </select>
+                                                                                                    <option value="1">
+                                                        Paypal
+                                                    </option>
+                                                                                                    <option value="2">
+                                                        Perfect Money
+                                                    </option>
+                                                                                                    <option value="3">
+                                                        Stripe Hosted
+                                                    </option>
+                                                                                                    <option value="4">
+                                                        Skrill
+                                                    </option>
+                                                                                                    <option value="5">
+                                                        PayTM
+                                                    </option>
+                                                                                                    <option value="6">
+                                                        Payeer
+                                                    </option>
+                                                                                                    <option value="7">
+                                                        PayStack
+                                                    </option>
+                                                                                                    <option value="8">
+                                                        VoguePay
+                                                    </option>
+                                                                                                    <option value="9">
+                                                        Flutterwave
+                                                    </option>
+                                                                                                    <option value="10">
+                                                        RazorPay
+                                                    </option>
+                                                                                                    <option value="11">
+                                                        Stripe Storefront
+                                                    </option>
+                                                                                                    <option value="12">
+                                                        Instamojo
+                                                    </option>
+                                                                                                    <option value="13">
+                                                        Blockchain
+                                                    </option>
+                                                                                                    <option value="15">
+                                                        CoinPayments
+                                                    </option>
+                                                                                                    <option value="16">
+                                                        CoinPayments Fiat
+                                                    </option>
+                                                                                                    <option value="17">
+                                                        Coingate
+                                                    </option>
+                                                                                                    <option value="18">
+                                                        Coinbase Commerce
+                                                    </option>
+                                                                                                    <option value="19">
+                                                        Paypal Express
+                                                    </option>
+                                                                                                    <option value="20">
+                                                        Stripe Checkout
+                                                    </option>
+                                                                                                    <option value="21">
+                                                        Mollie
+                                                    </option>
+                                                                                                    <option value="22">
+                                                        Cashmaal
+                                                    </option>
+                                                                                                    <option value="23">
+                                                        Mercado Pago
+                                                    </option>
+                                                                                                    <option value="24">
+                                                        Authorize.net
+                                                    </option>
+                                                                                                    <option value="25">
+                                                        NMI
+                                                    </option>
+                                                                                            </select>
                                         </div>
                                     </div>
                                     <div class="col-xxl-4 col-sm-6">
@@ -422,52 +467,34 @@
                                     <div class="col-xxl-4 col-sm-6">
                                         <div class="form-group">
                                             <label for="available_for_sell">Available For sell</label>
-                                                <div class="toggle btn btn-lg btn-success" data-bs-toggle="toggle" style="width: 100%; height: 39.4727px;">
-                                                <input type="checkbox" data-width="100%" data-size="large" data-onstyle="-success" data-offstyle="-danger" data-bs-toggle="toggle" data-on="Yes" data-off="No" name="available_for_sell" checked="" id="available_for_sell">
-                                                <div class="toggle-group">
-                                                <label class="btn btn-success btn-lg toggle-on">Yes</label>
-                                                <label class="btn btn-danger btn-lg active toggle-off">No</label>
-                                                <span class="toggle-handle btn btn-default btn-lg"></span></div></div>
+                                            <div class="toggle btn btn--success btn-lg" data-bs-toggle="toggle" style="width: 100%; height: 41px;"><input type="checkbox" data-width="100%" data-size="large" data-onstyle="-success" data-offstyle="-danger" data-bs-toggle="toggle" data-on="Yes" data-off="No" name="available_for_sell" checked="" id="available_for_sell"><div class="toggle-group"><label class="btn btn--success btn-lg toggle-on">Yes</label><label class="btn btn--danger btn-lg active toggle-off">No</label><span class="toggle-handle btn btn-default btn-lg"></span></div></div>
                                         </div>
                                     </div>
 
                                     <div class="col-xxl-4 col-sm-6">
                                         <div class="form-group">
-
                                             <label for="available_for_buy"> Available For buy</label>
-                                            <div class="toggle btn btn-lg btn-success" data-bs-toggle="toggle" style="width: 100%; height: 39.4727px;">
-                                            <input type="checkbox" data-width="100%" data-size="large" data-onstyle="-success" data-offstyle="-danger" data-bs-toggle="toggle" data-on="Yes" data-off="No" name="available_for_buy" checked="" id="available_for_buy">
-                                            <div class="toggle-group">
-                                            <label class="btn btn-success btn-lg toggle-on">Yes</label>
-                                            <label class="btn btn-danger btn-lg active toggle-off">No</label>
-                                            <span class="toggle-handle btn btn-default btn-lg"></span></div></div>
+                                            <div class="toggle btn btn--success btn-lg" data-bs-toggle="toggle" style="width: 100%; height: 41px;"><input type="checkbox" data-width="100%" data-size="large" data-onstyle="-success" data-offstyle="-danger" data-bs-toggle="toggle" data-on="Yes" data-off="No" name="available_for_buy" checked="" id="available_for_buy"><div class="toggle-group"><label class="btn btn--success btn-lg toggle-on">Yes</label><label class="btn btn--danger btn-lg active toggle-off">No</label><span class="toggle-handle btn btn-default btn-lg"></span></div></div>
                                         </div>
                                     </div>
 
-                                    <div class="col-xxl-4 col-sm-6">
+                                  <div class="col-xxl-4 col-sm-6">
                                         <div class="form-group">
                                             <label for="rate_show"> Rate Show</label>
-                                            <div class="toggle btn btn-success btn-lg" data-bs-toggle="toggle" style="width: 100%; height: 39.4727px;">
-                                            <input type="checkbox" data-width="100%" data-size="large" data-onstyle="-success" data-offstyle="-danger" data-bs-toggle="toggle" data-on="Yes" data-off="No" name="rate_show" checked="" id="rate_show">
-                                            <div class="toggle-group">
-                                            <label class="btn btn-success btn-lg toggle-on">Yes</label>
-                                            <label class="btn btn-danger btn-lg active toggle-off">No</label>
-                                            <span class="toggle-handle btn btn-default btn-lg"></span></div></div>
+                                            <div class="toggle btn btn--success btn-lg" data-bs-toggle="toggle" style="width: 100%; height: 41px;"><input type="checkbox" data-width="100%" data-size="large" data-onstyle="-success" data-offstyle="-danger" data-bs-toggle="toggle" data-on="Yes" data-off="No" name="rate_show" checked="" id="rate_show"><div class="toggle-group"><label class="btn btn--success btn-lg toggle-on">Yes</label><label class="btn btn--danger btn-lg active toggle-off">No</label><span class="toggle-handle btn btn-default btn-lg"></span></div></div>
                                         </div>
                                     </div>
-
-
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
+            </div>
             </div>
 
             <div class="col-xl-6 col-lg-12 col-md-6">
                 <div class="card">
-                    <h5 class="card-header bg-info">Limit &amp; Charge for Sale</h5>
+                    <h5 class="card-header bg--info">Limit &amp; Charge for Sale</h5>
                     <div class="card-body">
                         <div class="row">
                             <div class="form-group col-lg-6">
@@ -540,16 +567,14 @@
                     </div>
                 </div>
             </div>
-            </div>
-    
+        </div>
 
         <div class="forManualGateway my-4">
             <div class="card">
                 <h5 class="card-header">Instruction <i class="fa fa-info-circle text-primary" title="" data-bs-original-title="Write the payment instruction here. Users will see the instruction while exchanging money." aria-label="Write the payment instruction here. Users will see the instruction while exchanging money."></i></h5>
                 <div class="card-body">
                     <div class="form-group">
-                        <div style="width: 1344px;" unselectable="on">
-                            <div class=" nicEdit-panelContain" unselectable="on" style="overflow: hidden; width: 100%; border: 1px solid rgb(204, 204, 204); background-color: rgb(239, 239, 239);"><div class=" nicEdit-panel" unselectable="on" style="margin: 0px 2px 2px; zoom: 1; overflow: hidden;"><div style="float: left; margin-top: 2px; display: none;"><div class=" nicEdit-buttonContain " style="width: 20px; height: 20px; opacity: 0.6;"><div class=" nicEdit-button-undefined" style="background-color: rgb(239, 239, 239); border: 1px solid rgb(239, 239, 239);"><div class=" nicEdit-button" unselectable="on" style="width: 18px; height: 18px; overflow: hidden; zoom: 1; cursor: pointer; background-image: url(&quot;https://script.viserlab.com/changalab/demo/assets/admin/js/nicEditIcons-latest.gif&quot;); background-position: -432px 0px;"></div></div></div></div><div unselectable="on" style="float: left; margin-top: 2px;"><div class=" nicEdit-buttonContain " unselectable="on" style="width: 20px; height: 20px; opacity: 0.6;"><div class=" nicEdit-button-undefined" unselectable="on" style="background-color: rgb(239, 239, 239); border: 1px solid rgb(239, 239, 239);"><div class=" nicEdit-button" unselectable="on" style="width: 18px; height: 18px; overflow: hidden; zoom: 1; cursor: pointer; background-image: url(&quot;https://script.viserlab.com/changalab/demo/assets/admin/js/nicEditIcons-latest.gif&quot;); background-position: -54px 0px;"></div></div></div></div><div unselectable="on" style="float: left; margin-top: 2px;"><div class=" nicEdit-buttonContain " unselectable="on" style="width: 20px; height: 20px; opacity: 0.6;"><div class=" nicEdit-button-undefined nicEdit-button-hover" unselectable="on" style="background-color: rgb(239, 239, 239); border: 1px solid rgb(239, 239, 239);"><div class=" nicEdit-button" unselectable="on" style="width: 18px; height: 18px; overflow: hidden; zoom: 1; cursor: pointer; background-image: url(&quot;https://script.viserlab.com/changalab/demo/assets/admin/js/nicEditIcons-latest.gif&quot;); background-position: -126px 0px;"></div></div></div></div><div unselectable="on" style="float: left; margin-top: 2px;"><div class=" nicEdit-buttonContain " unselectable="on" style="width: 20px; height: 20px; opacity: 0.6;"><div class=" nicEdit-button-undefined nicEdit-button-hover" unselectable="on" style="background-color: rgb(239, 239, 239); border: 1px solid rgb(239, 239, 239);"><div class=" nicEdit-button" unselectable="on" style="width: 18px; height: 18px; overflow: hidden; zoom: 1; cursor: pointer; background-image: url(&quot;https://script.viserlab.com/changalab/demo/assets/admin/js/nicEditIcons-latest.gif&quot;); background-position: -342px 0px;"></div></div></div></div><div unselectable="on" style="float: left; margin-top: 2px;"><div class=" nicEdit-buttonContain " unselectable="on" style="width: 20px; height: 20px; opacity: 0.6;"><div class=" nicEdit-button-undefined nicEdit-button-hover" unselectable="on" style="background-color: rgb(239, 239, 239); border: 1px solid rgb(239, 239, 239);"><div class=" nicEdit-button" unselectable="on" style="width: 18px; height: 18px; overflow: hidden; zoom: 1; cursor: pointer; background-image: url(&quot;https://script.viserlab.com/changalab/demo/assets/admin/js/nicEditIcons-latest.gif&quot;); background-position: -162px 0px;"></div></div></div></div><div unselectable="on" style="float: left; margin-top: 2px;"><div class=" nicEdit-buttonContain " unselectable="on" style="width: 20px; height: 20px; opacity: 0.6;"><div class=" nicEdit-button-undefined nicEdit-button-hover" unselectable="on" style="background-color: rgb(239, 239, 239); border: 1px solid rgb(239, 239, 239);"><div class=" nicEdit-button" unselectable="on" style="width: 18px; height: 18px; overflow: hidden; zoom: 1; cursor: pointer; background-image: url(&quot;https://script.viserlab.com/changalab/demo/assets/admin/js/nicEditIcons-latest.gif&quot;); background-position: -72px 0px;"></div></div></div></div><div unselectable="on" style="float: left; margin-top: 2px;"><div class=" nicEdit-buttonContain " unselectable="on" style="width: 20px; height: 20px; opacity: 0.6;"><div class=" nicEdit-button-undefined nicEdit-button-hover" unselectable="on" style="background-color: rgb(239, 239, 239); border: 1px solid rgb(239, 239, 239);"><div class=" nicEdit-button" unselectable="on" style="width: 18px; height: 18px; overflow: hidden; zoom: 1; cursor: pointer; background-image: url(&quot;https://script.viserlab.com/changalab/demo/assets/admin/js/nicEditIcons-latest.gif&quot;); background-position: -234px 0px;"></div></div></div></div><div unselectable="on" style="float: left; margin-top: 2px;"><div class=" nicEdit-buttonContain " unselectable="on" style="width: 20px; height: 20px; opacity: 0.6;"><div class=" nicEdit-button-undefined nicEdit-button-hover" unselectable="on" style="background-color: rgb(239, 239, 239); border: 1px solid rgb(239, 239, 239);"><div class=" nicEdit-button" unselectable="on" style="width: 18px; height: 18px; overflow: hidden; zoom: 1; cursor: pointer; background-image: url(&quot;https://script.viserlab.com/changalab/demo/assets/admin/js/nicEditIcons-latest.gif&quot;); background-position: -144px 0px;"></div></div></div></div><div unselectable="on" style="float: left; margin-top: 2px;"><div class=" nicEdit-buttonContain " unselectable="on" style="width: 20px; height: 20px; opacity: 0.6;"><div class=" nicEdit-button-undefined nicEdit-button-hover" unselectable="on" style="background-color: rgb(239, 239, 239); border: 1px solid rgb(239, 239, 239);"><div class=" nicEdit-button" unselectable="on" style="width: 18px; height: 18px; overflow: hidden; zoom: 1; cursor: pointer; background-image: url(&quot;https://script.viserlab.com/changalab/demo/assets/admin/js/nicEditIcons-latest.gif&quot;); background-position: -180px 0px;"></div></div></div></div><div unselectable="on" style="float: left; margin-top: 2px;"><div class=" nicEdit-buttonContain " unselectable="on" style="width: 20px; height: 20px; opacity: 0.6;"><div class=" nicEdit-button-undefined nicEdit-button-hover" unselectable="on" style="background-color: rgb(239, 239, 239); border: 1px solid rgb(239, 239, 239);"><div class=" nicEdit-button" unselectable="on" style="width: 18px; height: 18px; overflow: hidden; zoom: 1; cursor: pointer; background-image: url(&quot;https://script.viserlab.com/changalab/demo/assets/admin/js/nicEditIcons-latest.gif&quot;); background-position: -324px 0px;"></div></div></div></div><div unselectable="on" style="float: left; margin: 2px 1px 0px;"><div class=" nicEdit-selectContain" unselectable="on" style="width: 90px; height: 20px; cursor: pointer; overflow: hidden; opacity: 0.6;"><div unselectable="on" style="overflow: hidden; zoom: 1; border: 1px solid rgb(204, 204, 204); padding-left: 3px; background-color: rgb(255, 255, 255);"><div class=" nicEdit-selectControl" unselectable="on" style="overflow: hidden; float: right; height: 18px; width: 16px; background-image: url(&quot;https://script.viserlab.com/changalab/demo/assets/admin/js/nicEditIcons-latest.gif&quot;); background-position: -450px 0px;"></div><div class=" nicEdit-selectTxt" unselectable="on" style="overflow: hidden; float: left; width: 66px; height: 14px; margin-top: 1px; font-family: sans-serif; text-align: center; font-size: 12px;">Font&nbsp;Size...</div></div></div></div><div unselectable="on" style="float: left; margin: 2px 1px 0px;"><div class=" nicEdit-selectContain" unselectable="on" style="width: 90px; height: 20px; cursor: pointer; overflow: hidden; opacity: 0.6;"><div unselectable="on" style="overflow: hidden; zoom: 1; border: 1px solid rgb(204, 204, 204); padding-left: 3px; background-color: rgb(255, 255, 255);"><div class=" nicEdit-selectControl" unselectable="on" style="overflow: hidden; float: right; height: 18px; width: 16px; background-image: url(&quot;https://script.viserlab.com/changalab/demo/assets/admin/js/nicEditIcons-latest.gif&quot;); background-position: -450px 0px;"></div><div class=" nicEdit-selectTxt" unselectable="on" style="overflow: hidden; float: left; width: 66px; height: 14px; margin-top: 1px; font-family: sans-serif; text-align: center; font-size: 12px;">Font&nbsp;Family...</div></div></div></div><div unselectable="on" style="float: left; margin: 2px 1px 0px;"><div class=" nicEdit-selectContain" unselectable="on" style="width: 90px; height: 20px; cursor: pointer; overflow: hidden; opacity: 0.6;"><div unselectable="on" style="overflow: hidden; zoom: 1; border: 1px solid rgb(204, 204, 204); padding-left: 3px; background-color: rgb(255, 255, 255);"><div class=" nicEdit-selectControl" unselectable="on" style="overflow: hidden; float: right; height: 18px; width: 16px; background-image: url(&quot;https://script.viserlab.com/changalab/demo/assets/admin/js/nicEditIcons-latest.gif&quot;); background-position: -450px 0px;"></div><div class=" nicEdit-selectTxt" unselectable="on" style="overflow: hidden; float: left; width: 66px; height: 14px; margin-top: 1px; font-family: sans-serif; text-align: center; font-size: 12px;">Font&nbsp;Format...</div></div></div></div><div unselectable="on" style="float: left; margin-top: 2px;"><div class=" nicEdit-buttonContain " unselectable="on" style="width: 20px; height: 20px; opacity: 0.6;"><div class=" nicEdit-button-undefined nicEdit-button-hover" unselectable="on" style="background-color: rgb(239, 239, 239); border: 1px solid rgb(239, 239, 239);"><div class=" nicEdit-button" unselectable="on" style="width: 18px; height: 18px; overflow: hidden; zoom: 1; cursor: pointer; background-image: url(&quot;https://script.viserlab.com/changalab/demo/assets/admin/js/nicEditIcons-latest.gif&quot;); background-position: -108px 0px;"></div></div></div></div><div unselectable="on" style="float: left; margin-top: 2px;"><div class=" nicEdit-buttonContain " unselectable="on" style="width: 20px; height: 20px; opacity: 0.6;"><div class=" nicEdit-button-undefined" unselectable="on" style="background-color: rgb(239, 239, 239); border: 1px solid rgb(239, 239, 239);"><div class=" nicEdit-button" unselectable="on" style="width: 18px; height: 18px; overflow: hidden; zoom: 1; cursor: pointer; background-image: url(&quot;https://script.viserlab.com/changalab/demo/assets/admin/js/nicEditIcons-latest.gif&quot;); background-position: -198px 0px;"></div></div></div></div><div style="float: left; margin-top: 2px;"><div class=" nicEdit-buttonContain " style="width: 20px; height: 20px; opacity: 0.6;"><div class=" nicEdit-button-undefined" style="background-color: rgb(239, 239, 239); border: 1px solid rgb(239, 239, 239);"><div class=" nicEdit-button" unselectable="on" style="width: 18px; height: 18px; overflow: hidden; zoom: 1; cursor: pointer; background-image: url(&quot;https://script.viserlab.com/changalab/demo/assets/admin/js/nicEditIcons-latest.gif&quot;); background-position: -360px 0px;"></div></div></div></div><div style="float: left; margin-top: 2px;"><div class=" nicEdit-buttonContain " style="width: 20px; height: 20px; opacity: 0.6;"><div class=" nicEdit-button-undefined" style="background-color: rgb(239, 239, 239); border: 1px solid rgb(239, 239, 239);"><div class=" nicEdit-button" unselectable="on" style="width: 18px; height: 18px; overflow: hidden; zoom: 1; cursor: pointer; background-image: url(&quot;https://script.viserlab.com/changalab/demo/assets/admin/js/nicEditIcons-latest.gif&quot;); background-position: -468px 0px;"></div></div></div></div><div style="float: left; margin-top: 2px;"><div class=" nicEdit-buttonContain " style="width: 20px; height: 20px; opacity: 0.6;"><div class=" nicEdit-button-undefined" style="background-color: rgb(239, 239, 239); border: 1px solid rgb(239, 239, 239);"><div class=" nicEdit-button" unselectable="on" style="width: 18px; height: 18px; overflow: hidden; zoom: 1; cursor: pointer; background-image: url(&quot;https://script.viserlab.com/changalab/demo/assets/admin/js/nicEditIcons-latest.gif&quot;); background-position: -378px 0px;"></div></div></div></div><div style="float: left; margin-top: 2px;"><div class=" nicEdit-buttonContain " style="width: 20px; height: 20px; opacity: 0.6;"><div class=" nicEdit-button-undefined" style="background-color: rgb(239, 239, 239); border: 1px solid rgb(239, 239, 239);"><div class=" nicEdit-button" unselectable="on" style="width: 18px; height: 18px; overflow: hidden; zoom: 1; cursor: pointer; background-image: url(&quot;https://script.viserlab.com/changalab/demo/assets/admin/js/nicEditIcons-latest.gif&quot;); background-position: -396px 0px;"></div></div></div></div><div style="float: left; margin-top: 2px;"><div class=" nicEdit-buttonContain " style="width: 20px; height: 20px; opacity: 0.6;"><div class=" nicEdit-button-undefined" style="background-color: rgb(239, 239, 239); border: 1px solid rgb(239, 239, 239);"><div class=" nicEdit-button" unselectable="on" style="width: 18px; height: 18px; overflow: hidden; zoom: 1; cursor: pointer; background-image: url(&quot;https://script.viserlab.com/changalab/demo/assets/admin/js/nicEditIcons-latest.gif&quot;); background-position: -36px 0px;"></div></div></div></div><div style="float: left; margin-top: 2px;"><div class=" nicEdit-buttonContain " style="width: 20px; height: 20px; opacity: 0.6;"><div class=" nicEdit-button-undefined" style="background-color: rgb(239, 239, 239); border: 1px solid rgb(239, 239, 239);"><div class=" nicEdit-button" unselectable="on" style="width: 18px; height: 18px; overflow: hidden; zoom: 1; cursor: pointer; background-image: url(&quot;https://script.viserlab.com/changalab/demo/assets/admin/js/nicEditIcons-latest.gif&quot;); background-position: -18px 0px;"></div></div></div></div><div unselectable="on" style="float: left; margin-top: 2px;"><div class=" nicEdit-buttonContain " unselectable="on" style="width: 20px; height: 20px; opacity: 0.6;"><div class=" nicEdit-button-undefined" unselectable="on" style="background-color: rgb(239, 239, 239); border: 1px solid rgb(239, 239, 239);"><div class=" nicEdit-button" unselectable="on" style="width: 18px; height: 18px; overflow: hidden; zoom: 1; cursor: pointer; background-image: url(&quot;https://script.viserlab.com/changalab/demo/assets/admin/js/nicEditIcons-latest.gif&quot;); background-position: -288px 0px;"></div></div></div></div><div unselectable="on" style="float: left; margin-top: 2px;"><div class=" nicEdit-buttonContain " unselectable="on" style="width: 20px; height: 20px; opacity: 0.6;"><div class=" nicEdit-button-undefined" unselectable="on" style="background-color: rgb(239, 239, 239); border: 1px solid rgb(239, 239, 239);"><div class=" nicEdit-button" unselectable="on" style="width: 18px; height: 18px; overflow: hidden; zoom: 1; cursor: pointer; background-image: url(&quot;https://script.viserlab.com/changalab/demo/assets/admin/js/nicEditIcons-latest.gif&quot;); background-position: -306px 0px;"></div></div></div></div><div unselectable="on" style="float: left; margin-top: 2px;"><div class=" nicEdit-buttonContain " unselectable="on" style="width: 20px; height: 20px; opacity: 0.6;"><div class=" nicEdit-button-undefined" unselectable="on" style="background-color: rgb(239, 239, 239); border: 1px solid rgb(239, 239, 239);"><div class=" nicEdit-button" unselectable="on" style="width: 18px; height: 18px; overflow: hidden; zoom: 1; cursor: pointer; background-image: url(&quot;https://script.viserlab.com/changalab/demo/assets/admin/js/nicEditIcons-latest.gif&quot;); background-position: -270px 0px;"></div></div></div></div><div unselectable="on" style="float: left; margin-top: 2px;"><div class=" nicEdit-buttonContain " unselectable="on" style="width: 20px; height: 20px; opacity: 0.6;"><div class=" nicEdit-button-undefined" unselectable="on" style="background-color: rgb(239, 239, 239); border: 1px solid rgb(239, 239, 239);"><div class=" nicEdit-button" unselectable="on" style="width: 18px; height: 18px; overflow: hidden; zoom: 1; cursor: pointer; background-image: url(&quot;https://script.viserlab.com/changalab/demo/assets/admin/js/nicEditIcons-latest.gif&quot;); background-position: -216px 0px;"></div></div></div></div><div unselectable="on" style="float: left; margin-top: 2px;"><div class=" nicEdit-buttonContain " unselectable="on" style="width: 20px; height: 20px; opacity: 0.6;"><div class=" nicEdit-button-undefined" unselectable="on" style="background-color: rgb(239, 239, 239); border: 1px solid rgb(239, 239, 239);"><div class=" nicEdit-button" unselectable="on" style="width: 18px; height: 18px; overflow: hidden; zoom: 1; cursor: pointer; background-image: url(&quot;https://script.viserlab.com/changalab/demo/assets/admin/js/nicEditIcons-latest.gif&quot;); background-position: -90px 0px;"></div></div></div></div><div style="float: left; margin-top: 2px;"><div class=" nicEdit-buttonContain " style="width: 20px; height: 20px; opacity: 0.6;"><div class=" nicEdit-button-undefined" style="background-color: rgb(239, 239, 239); border: 1px solid rgb(239, 239, 239);"><div class=" nicEdit-button" unselectable="on" style="width: 18px; height: 18px; overflow: hidden; zoom: 1; cursor: pointer; background-image: url(&quot;https://script.viserlab.com/changalab/demo/assets/admin/js/nicEditIcons-latest.gif&quot;); background-position: 0px 0px;"></div></div></div></div></div></div></div><div style="width: 1344px; border-width: 0px 1px 1px; border-top-style: initial; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: initial; border-right-color: rgb(204, 204, 204); border-bottom-color: rgb(204, 204, 204); border-left-color: rgb(204, 204, 204); border-image: initial; overflow: hidden auto;"><div class=" nicEdit-main " contenteditable="true" style="width: 1336px; margin: 4px; min-height: 182px; overflow: hidden;"><br></div></div><textarea rows="8" class="form-control nicEdit" name="instruction" id="nicEditor0" style="display: none;"></textarea>
+                        <div style="width: 2356px;" unselectable="on"><div class=" nicEdit-panelContain" unselectable="on" style="overflow: hidden; width: 100%; border: 1px solid rgb(204, 204, 204); background-color: rgb(239, 239, 239);"><div class=" nicEdit-panel" unselectable="on" style="margin: 0px 2px 2px; zoom: 1; overflow: hidden;"><div style="float: left; margin-top: 2px; display: none;"><div class=" nicEdit-buttonContain   nicEdit-buttonEnabled" style="width: 20px; height: 20px; opacity: 1;"><div class=" nicEdit-button-undefined" style="background-color: rgb(239, 239, 239); border: 1px solid rgb(239, 239, 239);"><div class=" nicEdit-button" unselectable="on" style="width: 18px; height: 18px; overflow: hidden; zoom: 1; cursor: pointer; background-image: url(&quot;https://script.viserlab.com/changalab/demo/assets/admin/js/nicEditIcons-latest.gif&quot;); background-position: -432px 0px;"></div></div></div></div><div unselectable="on" style="float: left; margin-top: 2px;"><div class=" nicEdit-buttonContain   nicEdit-buttonEnabled" unselectable="on" style="width: 20px; height: 20px; opacity: 1;"><div class=" nicEdit-button-undefined" unselectable="on" style="background-color: rgb(239, 239, 239); border: 1px solid rgb(239, 239, 239);"><div class=" nicEdit-button" unselectable="on" style="width: 18px; height: 18px; overflow: hidden; zoom: 1; cursor: pointer; background-image: url(&quot;https://script.viserlab.com/changalab/demo/assets/admin/js/nicEditIcons-latest.gif&quot;); background-position: -54px 0px;"></div></div></div></div><div unselectable="on" style="float: left; margin-top: 2px;"><div class=" nicEdit-buttonContain   nicEdit-buttonEnabled" unselectable="on" style="width: 20px; height: 20px; opacity: 1;"><div class=" nicEdit-button-undefined" unselectable="on" style="background-color: rgb(239, 239, 239); border: 1px solid rgb(239, 239, 239);"><div class=" nicEdit-button" unselectable="on" style="width: 18px; height: 18px; overflow: hidden; zoom: 1; cursor: pointer; background-image: url(&quot;https://script.viserlab.com/changalab/demo/assets/admin/js/nicEditIcons-latest.gif&quot;); background-position: -126px 0px;"></div></div></div></div><div unselectable="on" style="float: left; margin-top: 2px;"><div class=" nicEdit-buttonContain   nicEdit-buttonEnabled" unselectable="on" style="width: 20px; height: 20px; opacity: 1;"><div class=" nicEdit-button-undefined" unselectable="on" style="background-color: rgb(239, 239, 239); border: 1px solid rgb(239, 239, 239);"><div class=" nicEdit-button" unselectable="on" style="width: 18px; height: 18px; overflow: hidden; zoom: 1; cursor: pointer; background-image: url(&quot;https://script.viserlab.com/changalab/demo/assets/admin/js/nicEditIcons-latest.gif&quot;); background-position: -342px 0px;"></div></div></div></div><div unselectable="on" style="float: left; margin-top: 2px;"><div class=" nicEdit-buttonContain   nicEdit-buttonEnabled" unselectable="on" style="width: 20px; height: 20px; opacity: 1;"><div class=" nicEdit-button-undefined" unselectable="on" style="background-color: rgb(239, 239, 239); border: 1px solid rgb(239, 239, 239);"><div class=" nicEdit-button" unselectable="on" style="width: 18px; height: 18px; overflow: hidden; zoom: 1; cursor: pointer; background-image: url(&quot;https://script.viserlab.com/changalab/demo/assets/admin/js/nicEditIcons-latest.gif&quot;); background-position: -162px 0px;"></div></div></div></div><div unselectable="on" style="float: left; margin-top: 2px;"><div class=" nicEdit-buttonContain   nicEdit-buttonEnabled" unselectable="on" style="width: 20px; height: 20px; opacity: 1;"><div class=" nicEdit-button-undefined" unselectable="on" style="background-color: rgb(239, 239, 239); border: 1px solid rgb(239, 239, 239);"><div class=" nicEdit-button" unselectable="on" style="width: 18px; height: 18px; overflow: hidden; zoom: 1; cursor: pointer; background-image: url(&quot;https://script.viserlab.com/changalab/demo/assets/admin/js/nicEditIcons-latest.gif&quot;); background-position: -72px 0px;"></div></div></div></div><div unselectable="on" style="float: left; margin-top: 2px;"><div class=" nicEdit-buttonContain   nicEdit-buttonEnabled" unselectable="on" style="width: 20px; height: 20px; opacity: 1;"><div class=" nicEdit-button-undefined" unselectable="on" style="background-color: rgb(239, 239, 239); border: 1px solid rgb(239, 239, 239);"><div class=" nicEdit-button" unselectable="on" style="width: 18px; height: 18px; overflow: hidden; zoom: 1; cursor: pointer; background-image: url(&quot;https://script.viserlab.com/changalab/demo/assets/admin/js/nicEditIcons-latest.gif&quot;); background-position: -234px 0px;"></div></div></div></div><div unselectable="on" style="float: left; margin-top: 2px;"><div class=" nicEdit-buttonContain   nicEdit-buttonEnabled" unselectable="on" style="width: 20px; height: 20px; opacity: 1;"><div class=" nicEdit-button-undefined" unselectable="on" style="background-color: rgb(239, 239, 239); border: 1px solid rgb(239, 239, 239);"><div class=" nicEdit-button" unselectable="on" style="width: 18px; height: 18px; overflow: hidden; zoom: 1; cursor: pointer; background-image: url(&quot;https://script.viserlab.com/changalab/demo/assets/admin/js/nicEditIcons-latest.gif&quot;); background-position: -144px 0px;"></div></div></div></div><div unselectable="on" style="float: left; margin-top: 2px;"><div class=" nicEdit-buttonContain   nicEdit-buttonEnabled" unselectable="on" style="width: 20px; height: 20px; opacity: 1;"><div class=" nicEdit-button-undefined" unselectable="on" style="background-color: rgb(239, 239, 239); border: 1px solid rgb(239, 239, 239);"><div class=" nicEdit-button" unselectable="on" style="width: 18px; height: 18px; overflow: hidden; zoom: 1; cursor: pointer; background-image: url(&quot;https://script.viserlab.com/changalab/demo/assets/admin/js/nicEditIcons-latest.gif&quot;); background-position: -180px 0px;"></div></div></div></div><div unselectable="on" style="float: left; margin-top: 2px;"><div class=" nicEdit-buttonContain   nicEdit-buttonEnabled" unselectable="on" style="width: 20px; height: 20px; opacity: 1;"><div class=" nicEdit-button-undefined" unselectable="on" style="background-color: rgb(239, 239, 239); border: 1px solid rgb(239, 239, 239);"><div class=" nicEdit-button" unselectable="on" style="width: 18px; height: 18px; overflow: hidden; zoom: 1; cursor: pointer; background-image: url(&quot;https://script.viserlab.com/changalab/demo/assets/admin/js/nicEditIcons-latest.gif&quot;); background-position: -324px 0px;"></div></div></div></div><div unselectable="on" style="float: left; margin: 2px 1px 0px;"><div class=" nicEdit-selectContain" unselectable="on" style="width: 90px; height: 20px; cursor: pointer; overflow: hidden; opacity: 1;"><div unselectable="on" style="overflow: hidden; zoom: 1; border: 1px solid rgb(204, 204, 204); padding-left: 3px; background-color: rgb(255, 255, 255);"><div class=" nicEdit-selectControl" unselectable="on" style="overflow: hidden; float: right; height: 18px; width: 16px; background-image: url(&quot;https://script.viserlab.com/changalab/demo/assets/admin/js/nicEditIcons-latest.gif&quot;); background-position: -450px 0px;"></div><div class=" nicEdit-selectTxt" unselectable="on" style="overflow: hidden; float: left; width: 66px; height: 14px; margin-top: 1px; font-family: sans-serif; text-align: center; font-size: 12px;">Font&nbsp;Size...</div></div></div></div><div unselectable="on" style="float: left; margin: 2px 1px 0px;"><div class=" nicEdit-selectContain" unselectable="on" style="width: 90px; height: 20px; cursor: pointer; overflow: hidden; opacity: 1;"><div unselectable="on" style="overflow: hidden; zoom: 1; border: 1px solid rgb(204, 204, 204); padding-left: 3px; background-color: rgb(255, 255, 255);"><div class=" nicEdit-selectControl" unselectable="on" style="overflow: hidden; float: right; height: 18px; width: 16px; background-image: url(&quot;https://script.viserlab.com/changalab/demo/assets/admin/js/nicEditIcons-latest.gif&quot;); background-position: -450px 0px;"></div><div class=" nicEdit-selectTxt" unselectable="on" style="overflow: hidden; float: left; width: 66px; height: 14px; margin-top: 1px; font-family: sans-serif; text-align: center; font-size: 12px;">Font&nbsp;Family...</div></div></div></div><div unselectable="on" style="float: left; margin: 2px 1px 0px;"><div class=" nicEdit-selectContain" unselectable="on" style="width: 90px; height: 20px; cursor: pointer; overflow: hidden; opacity: 1;"><div unselectable="on" style="overflow: hidden; zoom: 1; border: 1px solid rgb(204, 204, 204); padding-left: 3px; background-color: rgb(255, 255, 255);"><div class=" nicEdit-selectControl" unselectable="on" style="overflow: hidden; float: right; height: 18px; width: 16px; background-image: url(&quot;https://script.viserlab.com/changalab/demo/assets/admin/js/nicEditIcons-latest.gif&quot;); background-position: -450px 0px;"></div><div class=" nicEdit-selectTxt" unselectable="on" style="overflow: hidden; float: left; width: 66px; height: 14px; margin-top: 1px; font-family: sans-serif; text-align: center; font-size: 12px;">Font&nbsp;Format...</div></div></div></div><div unselectable="on" style="float: left; margin-top: 2px;"><div class=" nicEdit-buttonContain   nicEdit-buttonEnabled" unselectable="on" style="width: 20px; height: 20px; opacity: 1;"><div class=" nicEdit-button-undefined" unselectable="on" style="background-color: rgb(239, 239, 239); border: 1px solid rgb(239, 239, 239);"><div class=" nicEdit-button" unselectable="on" style="width: 18px; height: 18px; overflow: hidden; zoom: 1; cursor: pointer; background-image: url(&quot;https://script.viserlab.com/changalab/demo/assets/admin/js/nicEditIcons-latest.gif&quot;); background-position: -108px 0px;"></div></div></div></div><div unselectable="on" style="float: left; margin-top: 2px;"><div class=" nicEdit-buttonContain   nicEdit-buttonEnabled" unselectable="on" style="width: 20px; height: 20px; opacity: 1;"><div class=" nicEdit-button-undefined" unselectable="on" style="background-color: rgb(239, 239, 239); border: 1px solid rgb(239, 239, 239);"><div class=" nicEdit-button" unselectable="on" style="width: 18px; height: 18px; overflow: hidden; zoom: 1; cursor: pointer; background-image: url(&quot;https://script.viserlab.com/changalab/demo/assets/admin/js/nicEditIcons-latest.gif&quot;); background-position: -198px 0px;"></div></div></div></div><div style="float: left; margin-top: 2px;"><div class=" nicEdit-buttonContain   nicEdit-buttonEnabled" style="width: 20px; height: 20px; opacity: 1;"><div class=" nicEdit-button-undefined" style="background-color: rgb(239, 239, 239); border: 1px solid rgb(239, 239, 239);"><div class=" nicEdit-button" unselectable="on" style="width: 18px; height: 18px; overflow: hidden; zoom: 1; cursor: pointer; background-image: url(&quot;https://script.viserlab.com/changalab/demo/assets/admin/js/nicEditIcons-latest.gif&quot;); background-position: -360px 0px;"></div></div></div></div><div style="float: left; margin-top: 2px;"><div class=" nicEdit-buttonContain   nicEdit-buttonEnabled" style="width: 20px; height: 20px; opacity: 1;"><div class=" nicEdit-button-undefined" style="background-color: rgb(239, 239, 239); border: 1px solid rgb(239, 239, 239);"><div class=" nicEdit-button" unselectable="on" style="width: 18px; height: 18px; overflow: hidden; zoom: 1; cursor: pointer; background-image: url(&quot;https://script.viserlab.com/changalab/demo/assets/admin/js/nicEditIcons-latest.gif&quot;); background-position: -468px 0px;"></div></div></div></div><div style="float: left; margin-top: 2px;"><div class=" nicEdit-buttonContain   nicEdit-buttonEnabled" style="width: 20px; height: 20px; opacity: 1;"><div class=" nicEdit-button-undefined" style="background-color: rgb(239, 239, 239); border: 1px solid rgb(239, 239, 239);"><div class=" nicEdit-button" unselectable="on" style="width: 18px; height: 18px; overflow: hidden; zoom: 1; cursor: pointer; background-image: url(&quot;https://script.viserlab.com/changalab/demo/assets/admin/js/nicEditIcons-latest.gif&quot;); background-position: -378px 0px;"></div></div></div></div><div style="float: left; margin-top: 2px;"><div class=" nicEdit-buttonContain   nicEdit-buttonEnabled" style="width: 20px; height: 20px; opacity: 1;"><div class=" nicEdit-button-undefined" style="background-color: rgb(239, 239, 239); border: 1px solid rgb(239, 239, 239);"><div class=" nicEdit-button" unselectable="on" style="width: 18px; height: 18px; overflow: hidden; zoom: 1; cursor: pointer; background-image: url(&quot;https://script.viserlab.com/changalab/demo/assets/admin/js/nicEditIcons-latest.gif&quot;); background-position: -396px 0px;"></div></div></div></div><div style="float: left; margin-top: 2px;"><div class=" nicEdit-buttonContain   nicEdit-buttonEnabled" style="width: 20px; height: 20px; opacity: 1;"><div class=" nicEdit-button-undefined" style="background-color: rgb(239, 239, 239); border: 1px solid rgb(239, 239, 239);"><div class=" nicEdit-button" unselectable="on" style="width: 18px; height: 18px; overflow: hidden; zoom: 1; cursor: pointer; background-image: url(&quot;https://script.viserlab.com/changalab/demo/assets/admin/js/nicEditIcons-latest.gif&quot;); background-position: -36px 0px;"></div></div></div></div><div style="float: left; margin-top: 2px;"><div class=" nicEdit-buttonContain   nicEdit-buttonEnabled" style="width: 20px; height: 20px; opacity: 1;"><div class=" nicEdit-button-undefined" style="background-color: rgb(239, 239, 239); border: 1px solid rgb(239, 239, 239);"><div class=" nicEdit-button" unselectable="on" style="width: 18px; height: 18px; overflow: hidden; zoom: 1; cursor: pointer; background-image: url(&quot;https://script.viserlab.com/changalab/demo/assets/admin/js/nicEditIcons-latest.gif&quot;); background-position: -18px 0px;"></div></div></div></div><div unselectable="on" style="float: left; margin-top: 2px;"><div class=" nicEdit-buttonContain   nicEdit-buttonEnabled" unselectable="on" style="width: 20px; height: 20px; opacity: 1;"><div class=" nicEdit-button-undefined" unselectable="on" style="background-color: rgb(239, 239, 239); border: 1px solid rgb(239, 239, 239);"><div class=" nicEdit-button" unselectable="on" style="width: 18px; height: 18px; overflow: hidden; zoom: 1; cursor: pointer; background-image: url(&quot;https://script.viserlab.com/changalab/demo/assets/admin/js/nicEditIcons-latest.gif&quot;); background-position: -288px 0px;"></div></div></div></div><div unselectable="on" style="float: left; margin-top: 2px;"><div class=" nicEdit-buttonContain   nicEdit-buttonEnabled" unselectable="on" style="width: 20px; height: 20px; opacity: 1;"><div class=" nicEdit-button-undefined" unselectable="on" style="background-color: rgb(239, 239, 239); border: 1px solid rgb(239, 239, 239);"><div class=" nicEdit-button" unselectable="on" style="width: 18px; height: 18px; overflow: hidden; zoom: 1; cursor: pointer; background-image: url(&quot;https://script.viserlab.com/changalab/demo/assets/admin/js/nicEditIcons-latest.gif&quot;); background-position: -306px 0px;"></div></div></div></div><div unselectable="on" style="float: left; margin-top: 2px;"><div class=" nicEdit-buttonContain   nicEdit-buttonEnabled" unselectable="on" style="width: 20px; height: 20px; opacity: 1;"><div class=" nicEdit-button-undefined" unselectable="on" style="background-color: rgb(239, 239, 239); border: 1px solid rgb(239, 239, 239);"><div class=" nicEdit-button" unselectable="on" style="width: 18px; height: 18px; overflow: hidden; zoom: 1; cursor: pointer; background-image: url(&quot;https://script.viserlab.com/changalab/demo/assets/admin/js/nicEditIcons-latest.gif&quot;); background-position: -270px 0px;"></div></div></div></div><div unselectable="on" style="float: left; margin-top: 2px;"><div class=" nicEdit-buttonContain   nicEdit-buttonEnabled" unselectable="on" style="width: 20px; height: 20px; opacity: 1;"><div class=" nicEdit-button-undefined" unselectable="on" style="background-color: rgb(239, 239, 239); border: 1px solid rgb(239, 239, 239);"><div class=" nicEdit-button" unselectable="on" style="width: 18px; height: 18px; overflow: hidden; zoom: 1; cursor: pointer; background-image: url(&quot;https://script.viserlab.com/changalab/demo/assets/admin/js/nicEditIcons-latest.gif&quot;); background-position: -216px 0px;"></div></div></div></div><div unselectable="on" style="float: left; margin-top: 2px;"><div class=" nicEdit-buttonContain   nicEdit-buttonEnabled" unselectable="on" style="width: 20px; height: 20px; opacity: 1;"><div class=" nicEdit-button-undefined" unselectable="on" style="background-color: rgb(239, 239, 239); border: 1px solid rgb(239, 239, 239);"><div class=" nicEdit-button" unselectable="on" style="width: 18px; height: 18px; overflow: hidden; zoom: 1; cursor: pointer; background-image: url(&quot;https://script.viserlab.com/changalab/demo/assets/admin/js/nicEditIcons-latest.gif&quot;); background-position: -90px 0px;"></div></div></div></div><div style="float: left; margin-top: 2px;"><div class=" nicEdit-buttonContain   nicEdit-buttonEnabled" style="width: 20px; height: 20px; opacity: 1;"><div class=" nicEdit-button-undefined" style="background-color: rgb(239, 239, 239); border: 1px solid rgb(239, 239, 239);"><div class=" nicEdit-button" unselectable="on" style="width: 18px; height: 18px; overflow: hidden; zoom: 1; cursor: pointer; background-image: url(&quot;https://script.viserlab.com/changalab/demo/assets/admin/js/nicEditIcons-latest.gif&quot;); background-position: 0px 0px;"></div></div></div></div></div></div></div><div style="width: 2356px; border-width: 0px 1px 1px; border-top-style: initial; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: initial; border-right-color: rgb(204, 204, 204); border-bottom-color: rgb(204, 204, 204); border-left-color: rgb(204, 204, 204); border-image: initial; overflow: hidden auto;"><div class=" nicEdit-main    " contenteditable="true" style="width: 2348px; margin: 4px; min-height: 184px; overflow: hidden;"><br></div></div><textarea rows="8" class="form-control nicEdit" name="instruction" id="nicEditor0" style="display: none;"></textarea>
                     </div>
                 </div>
             </div>
@@ -557,12 +582,11 @@
                 <div class="card-header d-flex justify-content-between">
                     <h5>Transaction Proof Form <i class="fa fa-info-circle text-primary" title="" data-bs-original-title="Users have to fill the form while sending money with this currency." aria-label="Users have to fill the form while sending money with this currency."></i></h5>
                     <button type="button" class="btn btn-sm btn-outline-primary float-end form-generate-btn" append-to="#transaction-proof" input-name="transaction_proof">
-                        <i class="la la-fw la-plus"></i>
-                        Add New</button>
+                        <i class="fa-solid fa-plus me-1"></i>Add New                    </button>
                 </div>
                 <div class="card-body">
                     <div class="row addedField" id="transaction-proof">
-                     </div>
+                                            </div>
                 </div>
             </div>
         </div>
@@ -572,21 +596,69 @@
                 <h5>Sending Form</h5>
 
                 <button type="button" class="btn btn-sm btn-outline-primary float-end form-generate-btn" append-to="#sending-details">
-                    <i class="la la-fw la-plus"></i>Add New                </button>
+                    <i class="fa-solid fa-plus me-1"></i>Add New                </button>
             </div>
             <div class="card-body">
                 <div class="row addedField" id="sending-details">
-                 </div>
+                                    </div>
             </div>
         </div>
 
-        <div class="col-12 my-5">
-            <button type="submit" class="btn btn-primary w-100 h-45">Submit</button>
+        <div class="col-12 ms-2">
+            <button type="submit" class="btn btn-primary w-100 h-45 d-block ms-2">Submit</button>
         </div>
-        </form>
+        </form></div>
+    
+    <div class="modal fade" id="formGenerateModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Generate Form</h5>
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+              <i class="las la-times"></i>
+          </button>
+        </div>
+        <form class="generate-form">
+            <input type="hidden" name="_token" value="VEVTNCJl2odXdIETN8alOkVXe1HV65cfCDBR7Jwe">              <div class="modal-body">
+                <input type="hidden" name="update_id" value="">
+                <div class="form-group">
+                    <label for="form_type" class="required">Form Type</label>
+                    <select name="form_type" class="form-control" required="" id="form_type">
+                        <option value="">Select One</option>
+                        <option value="text">Text</option>
+                        <option value="textarea">Textarea</option>
+                        <option value="select">Select</option>
+                        <option value="checkbox">Checkbox</option>
+                        <option value="radio">Radio</option>
+                        <option value="file">File</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="is_required" class="required">Is Required</label>
+                    <select name="is_required" class="form-control" required="" id="is_required">
+                        <option value="">Select One</option>
+                        <option value="required">Required</option>
+                        <option value="optional">Optional</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="form_label" class="required">Form Label</label>
+                    <input type="text" name="form_label" class="form-control" required="" id="form_label">
+                </div>
+                <div class="form-group extra_area"></div>
+              </div>
+              <div class="modal-footer">
+                  <button type="submit" class="btn btn--primary w-100 h-45 generatorSubmit">Add</button>
+              </div>
+          </form>
+      </div>
     </div>
-      
-        </div>
+</div>
+
+
+
+
+            </div>
 					
 				
 
@@ -609,6 +681,12 @@
    <script src="js/bootstrap.bundle.min.js"></script>
    <script src="js/script.js"></script>
 
+   <script src="https://script.viserlab.com/changalab/demo/assets/global/js/jquery-3.6.0.min.js"></script>
+   <script src="https://script.viserlab.com/changalab/demo/assets/global/js/bootstrap.bundle.min.js"></script>
+   <script src="https://script.viserlab.com/changalab/demo/assets/admin/js/vendor/bootstrap-toggle.min.js"></script>
+   <script src="https://script.viserlab.com/changalab/demo/assets/admin/js/vendor/jquery.slimscroll.min.js"></script>
+   <link rel="stylesheet" href="https://script.viserlab.com/changalab/demo/assets/global/css/iziToast.min.css">
+   <script src="https://script.viserlab.com/changalab/demo/assets/global/js/iziToast.min.js"></script>
   
   <script type="text/javascript">
 		$(document).ready(function(){
@@ -626,6 +704,47 @@
        
 </script>
 
+<script>
+    "use strict";
+    function notify(status, message) {
+            if(typeof message == 'string'){
+                iziToast[status]({
+                    message: message,
+                    position: "topRight"
+                });
+            }else{
+                $.each(message, function(i, val) {
+                    iziToast[status]({
+                        message: val,
+                        position: "topRight"
+                    });
+                });
+            }
+        }
+</script>
+<script>
+    "use strict";
+    bkLib.onDomLoaded(function() {
+        $(".nicEdit").each(function(index) {
+            $(this).attr("id", "nicEditor" + index);
+            new nicEditor({
+                fullPanel: true
+            }).panelInstance('nicEditor' + index, {
+                hasPanel: true
+            });
+        });
+    });
+    (function($) {
+        $(document).on('mouseover ', '.nicEdit-main,.nicEdit-panelContain', function() {
+            $('.nicEdit-main').focus();
+        });
+    })(jQuery);
+</script>
+<script>
+    "use strict"
+    var formGenerator = new FormGenerator();
+</script>
+<script src="https://script.viserlab.com/changalab/demo/assets/global/js/form_actions.js"></script>
 <script>
     "use strict";
     $(function() {
