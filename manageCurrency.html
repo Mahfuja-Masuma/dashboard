@@ -22,10 +22,10 @@
         crossorigin="anonymous"
       ></script>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-
-	
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    
+  
 	
 	
 	<!--google material icon-->
@@ -319,9 +319,12 @@
 
          <form action="https://script.viserlab.com/changalab/demo/admin/currency/save" method="POST" enctype="multipart/form-data">
         <input type="hidden" name="_token" value="jYXl4b76Lz9Z4bO1yCDPdWcBQvOcw5pU1mKM4n9p">        <div class="row gy-4">
+            
+            <div class="row gy-4">
             <div class="col-lg-12">
                 <div class="card">
                     <div class="card-body">
+                        
                         <div class="row justify-content-center">
                             <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-3">
                                 <div class="thumb mb-2">
@@ -340,7 +343,7 @@
 
                              <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8 col-xxl-9">
                                 <div class="row">
-                                    <div class="col-xxl-4 col-sm-12">
+                                    <div  class="col-xxl-4 col-sm-12">
                                         <div class="form-group">
                                             <label for="name" class="required">Currency Name</label>
                                             <input type="text" class="form-control" name="name" value="" required="" autocomplete="off" id="name">
@@ -354,7 +357,7 @@
                                         </div>
                                     </div>
 
-                                <div class="col-xxl-4 col-sm-6">
+                                    <div class="col-xxl-4 col-sm-6">
                                         <div class="form-group">
                                             <label for="payment_gateway" class="required"> Payment Gateway</label> <i class="la la-info-circle" title="" data-bs-original-title="User will send the money by this payment gateway." aria-label="User will send the money by this payment gateway."></i>
                                             <select name="payment_gateway" class="form-control" required="" id="payment_gateway">
@@ -419,26 +422,45 @@
                                     <div class="col-xxl-4 col-sm-6">
                                         <div class="form-group">
                                             <label for="available_for_sell">Available For sell</label>
-                                                <div class="toggle btn btn-lg btn-success" data-bs-toggle="toggle" style="width: 100%; height: 39.4727px;"><input type="checkbox" data-width="100%" data-size="large" data-onstyle="-success" data-offstyle="-danger" data-bs-toggle="toggle" data-on="Yes" data-off="No" name="available_for_sell" checked="" id="available_for_sell"><div class="toggle-group"><label class="btn btn--success btn-lg toggle-on">Yes</label><label class="btn btn--danger btn-lg active toggle-off">No</label><span class="toggle-handle btn btn-default btn-lg"></span></div></div>
+                                                <div class="toggle btn btn-lg btn-success" data-bs-toggle="toggle" style="width: 100%; height: 39.4727px;">
+                                                <input type="checkbox" data-width="100%" data-size="large" data-onstyle="-success" data-offstyle="-danger" data-bs-toggle="toggle" data-on="Yes" data-off="No" name="available_for_sell" checked="" id="available_for_sell">
+                                                <div class="toggle-group">
+                                                <label class="btn btn-success btn-lg toggle-on">Yes</label>
+                                                <label class="btn btn-danger btn-lg active toggle-off">No</label>
+                                                <span class="toggle-handle btn btn-default btn-lg"></span></div></div>
                                         </div>
                                     </div>
 
                                     <div class="col-xxl-4 col-sm-6">
                                         <div class="form-group">
+
                                             <label for="available_for_buy"> Available For buy</label>
-                                            <div class="toggle btn btn-lg btn-success" data-bs-toggle="toggle" style="width: 100%; height: 39.4727px;"><input type="checkbox" data-width="100%" data-size="large" data-onstyle="-success" data-offstyle="-danger" data-bs-toggle="toggle" data-on="Yes" data-off="No" name="available_for_buy" checked="" id="available_for_buy"><div class="toggle-group"><label class="btn btn--success btn-lg toggle-on">Yes</label><label class="btn btn--danger btn-lg active toggle-off">No</label><span class="toggle-handle btn btn-default btn-lg"></span></div></div>
+                                            <div class="toggle btn btn-lg btn-success" data-bs-toggle="toggle" style="width: 100%; height: 39.4727px;">
+                                            <input type="checkbox" data-width="100%" data-size="large" data-onstyle="-success" data-offstyle="-danger" data-bs-toggle="toggle" data-on="Yes" data-off="No" name="available_for_buy" checked="" id="available_for_buy">
+                                            <div class="toggle-group">
+                                            <label class="btn btn-success btn-lg toggle-on">Yes</label>
+                                            <label class="btn btn-danger btn-lg active toggle-off">No</label>
+                                            <span class="toggle-handle btn btn-default btn-lg"></span></div></div>
                                         </div>
                                     </div>
 
                                     <div class="col-xxl-4 col-sm-6">
                                         <div class="form-group">
                                             <label for="rate_show"> Rate Show</label>
-                                            <div class="toggle btn btn-success btn-lg" data-bs-toggle="toggle" style="width: 100%; height: 39.4727px;"><input type="checkbox" data-width="100%" data-size="large" data-onstyle="-success" data-offstyle="-danger" data-bs-toggle="toggle" data-on="Yes" data-off="No" name="rate_show" checked="" id="rate_show"><div class="toggle-group"><label class="btn btn--success btn-lg toggle-on">Yes</label><label class="btn btn--danger btn-lg active toggle-off">No</label><span class="toggle-handle btn btn-default btn-lg"></span></div></div>
+                                            <div class="toggle btn btn-success btn-lg" data-bs-toggle="toggle" style="width: 100%; height: 39.4727px;">
+                                            <input type="checkbox" data-width="100%" data-size="large" data-onstyle="-success" data-offstyle="-danger" data-bs-toggle="toggle" data-on="Yes" data-off="No" name="rate_show" checked="" id="rate_show">
+                                            <div class="toggle-group">
+                                            <label class="btn btn-success btn-lg toggle-on">Yes</label>
+                                            <label class="btn btn-danger btn-lg active toggle-off">No</label>
+                                            <span class="toggle-handle btn btn-default btn-lg"></span></div></div>
                                         </div>
                                     </div>
+
+
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -518,7 +540,8 @@
                     </div>
                 </div>
             </div>
-        </div>
+            </div>
+    
 
         <div class="forManualGateway my-4">
             <div class="card">
@@ -557,7 +580,7 @@
             </div>
         </div>
 
-        <div class="col-12">
+        <div class="col-12 my-5">
             <button type="submit" class="btn btn-primary w-100 h-45">Submit</button>
         </div>
         </form>
@@ -585,7 +608,7 @@
    <script src="js/jquery-3.3.1.min.js"></script>
    <script src="js/bootstrap.bundle.min.js"></script>
    <script src="js/script.js"></script>
-  
+
   
   <script type="text/javascript">
 		$(document).ready(function(){
@@ -604,60 +627,35 @@
 </script>
 
 <script>
-  "use strict";
+    "use strict";
+    $(function() {
 
-$(function() {
-    // Function to handle the display of currency symbols
-    const currencySymbol = () => {
-        let currency = $('.currency').val();
-        if (currency && currency.length > 0) {
-            currency = currency.toUpperCase();
-            $('.currency').val(currency);
-            $('.currency-symbol').removeClass('d-none');
-            $('.currency-symbol').parent().find('input').removeClass('rounded');
-            $('.currency-symbol').text(currency);
-        } else {
-            $('.currency-symbol').addClass('d-none');
-            $('.currency-symbol').parent().find('input').addClass('rounded');
+        const currencySymbol = () => {
+            let currency = $('.currency').val();
+            if (currency && currency.length > 0) {
+                currency = currency.toUpperCase();
+                $('.currency').val(currency);
+                $('.currency-symbol').removeClass('d-none');
+                $('.currency-symbol').parent().find('input').removeClass('rounded');
+                $('.currency-symbol').text(currency);
+            } else {
+                $('.currency-symbol').addClass('d-none');
+                $('.currency-symbol').parent().find('input').addClass('rounded');
+            }
         }
-    }
+        
+        $('.currency').on('input', currencySymbol);
 
-    // Event listener for input change on currency field
-    $('.currency').on('input', currencySymbol);
-
-    // Event listener for change on payment gateway select
-    $('[name=payment_gateway]').on('change', function() {
-        if (this.value != 0) {
-            $('.forManualGateway').addClass('d-none');
-        } else {
-            $('.forManualGateway').removeClass('d-none');
-        }
-    }).change(); // Trigger change event on page load to set initial state
-});
-
-// NicEdit initialization and focus handling
-"use strict";
-
-bkLib.onDomLoaded(function() {
-    $(".nicEdit").each(function(index) {
-        $(this).attr("id", "nicEditor" + index);
-        new nicEditor({ fullPanel: true }).panelInstance('nicEditor' + index, { hasPanel: true });
+        $('[name=payment_gateway]').on('change', function() {
+            if (this.value != 0) {
+                $('.forManualGateway').addClass('d-none');
+            } else {
+                $('.forManualGateway').removeClass('d-none');
+            }
+        }).change();
     });
-});
-
-(function($) {
-    $(document).on('mouseover', '.nicEdit-main, .nicEdit-panelContain', function() {
-        $('.nicEdit-main').focus();
-    });
-})(jQuery);
 </script>
 
-    <script>
-    "use strict"
-    var formGenerator = new FormGenerator();
-</script>
- 
-  
 
 
 

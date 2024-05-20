@@ -47,6 +47,7 @@
     border-radius: 5px;
     background-color: transparent;
     font-size: 0.875rem !important;
+    outline: none;
 }
 #currrency input[type="hidden" i] {
  
@@ -55,16 +56,16 @@
     display: none !important;
     padding: initial;
     border: initial;
+    outline: none;
 }
 
 #currrency input {
- 
     padding: 1px 0px;
-    border-width: 2px;
     border-style: inset;
     border-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
     padding-block: 1px;
     padding-inline: 2px;
+    outline: none;
 }
 
 
@@ -123,6 +124,7 @@
     cursor: pointer;
     color: white;
 }
+
 /* toggle start */
 #currrency label {
     font-size: 0.85rem;
@@ -147,6 +149,8 @@
     margin-bottom: 15px;
     position: relative;
 }
+
+
 #currrency .form-group label {
     font-size: 0.85rem;
     font-weight: 500;
@@ -156,7 +160,7 @@
     height: 45px !important;
 }
 #currrency .toggle-group {
-    position: absolute;
+    position: absolute !important;
     width: 200%;
     top: 0;
     bottom: 0;
@@ -165,23 +169,27 @@
 }
 #currrency .toggle-group .toggle-handle {
     background-color: #10163A;
+    top: 0;
+    right: 0;
+
 }
-.toggle{
-    margin-top: 20px;
-}
+
 input:not([type="radio"]), textarea {
     padding: 10px 20px;
     border-radius: 5px;
     background-color: transparent;
     font-size: 0.875rem !important;
+    outline: none;
 }
 input[type="radio"], input[type="range"], input[type="checkbox"] {
     padding: 0;
+    outline: none;
 }
 .toggle input[type=checkbox] {
     display: none;
 }
-.toggle-off {
+
+#currrency .toggle-off {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -191,7 +199,7 @@ input[type="radio"], input[type="range"], input[type="checkbox"] {
     border: 0;
     border-radius: 0;
 }
-.toggle-on {
+#currrency .toggle-on {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -201,7 +209,7 @@ input[type="radio"], input[type="range"], input[type="checkbox"] {
     border: 0;
     border-radius: 0;
 }
-.toggle-handle {
+#currrency .toggle-handle {
     position: relative;
     margin: 0 auto;
     padding-top: 0;
@@ -209,4 +217,9 @@ input[type="radio"], input[type="range"], input[type="checkbox"] {
     height: 100%;
     width: 0;
     border-width: 0 1px;
+}
+
+*[class*="btn-"] {
+    transition: all 0.3s;
+    font-size: 0.875rem;
 }
