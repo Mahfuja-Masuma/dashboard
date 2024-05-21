@@ -5,7 +5,7 @@
 
 }
 #currrency .currrency-btn1{
-    padding: 2px 8px;
+    padding: 0 8px;
     border: 1px solid var( --primary-color) ;
     background-color: transparent;
     display: block;
@@ -18,43 +18,47 @@
     background-color: var(--primary-color);
     color: white;
 }
+#currrency .currrency-btn2{
+    padding: 6px 8px;
+    border: none ;
+    display: block;
+    border-radius: 4px;
+    background-color: var( --primary-color);
+    transition: all .3s ease;
+    text-decoration: none;
+    color: white;
+}
+#currrency .currrency-btn1:hover{
+    background-color: var(--primary-color);
+    color: white;
+}
 
 /* manage currency end */
- .body-wrapper {
-    
+.body-wrapper{
     padding: 30px!important;
     transition: all 0.5s cubic-bezier(0.4, -0.25, 0.25, 1.1);
+  
 }
 #currrency .page-title {
     font-size: 1.125rem;
-    display: inline-block;
+    display: block; 
+   
 }
-
-
-#currrency input:not([type="radio"]), textarea {
+#currrency  form {
+    display: block;
+    margin-top: 0em;
+    unicode-bidi: isolate;
+}
+#currrency .form-group input{
     padding: 10px 20px;
     border-radius: 5px;
     background-color: transparent;
     font-size: 0.875rem !important;
-    outline: none;
-}
-#currrency input[type="hidden" i] {
- 
-    background-color: initial;
-    cursor: default;
-    display: none !important;
-    padding: initial;
-    border: initial;
-    outline: none;
+
 }
 
-#currrency input {
-    padding: 1px 0px;
-    border-style: inset;
-    border-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-    padding-block: 1px;
-    padding-inline: 2px;
-    outline: none;
+.form-group .form-conten{
+    padding-right: 15px!important;
 }
 
 
@@ -62,8 +66,14 @@
     border: none;
     box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, 0.03);
     border-radius: 5px;
+   
 }
-
+element.style {
+    width: 999px;
+    margin: 4px;
+    min-height: 182px;
+    overflow: hidden;
+}
 #currrency .thumb .profilePicPreview {
     width: 100%;
     height: 250px;
@@ -81,28 +91,7 @@
     width: 0;
 }
 
-#currrency .thumb .avatar-edit label {
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 45px;
-    border: 2px solid #fff;
-    font-size: 18px;
-    cursor: pointer;
-}
-
-#currrency .thumb {
-    position: relative;
-    margin-bottom: 30px;
-}
-
-#currrency .thumb .avatar-edit {
-    position: absolute;
-    bottom: -15px;
-    right: 0;
-}
-#currrency .thumb .avatar-edit label {
+#currrency .thumb .avatar-edit i {
     width: 45px;
     height: 45px;
     border-radius: 50%;
@@ -112,22 +101,32 @@
     font-size: 18px;
     cursor: pointer;
     color: white;
+    background-color: var(--primary-color);
 }
 
-/* toggle start */
-#currrency label {
-    font-size: 0.85rem;
-    font-weight: 500;
-    margin-bottom: 5px;
+#currrency .thumb {
+    position: relative;
+    margin-bottom: 30px;
 }
+
+
+#currrency .thumb .avatar-edit {
+    position: absolute;
+    bottom: -15px;
+    right: 0;
+   
+}
+
+
+
+/* toggle start */
+
 #currrency label.required:after {
     content: '*';
     color: #DC3545 !important;
     margin-left: 2px;
 }
-#currrency input.form-control, select.form-control {
-    height: 45px;
-}
+
 #currrency .toggle-on.btn, #currrency .toggle-off.btn {
     line-height: 32px;
 }
@@ -140,6 +139,7 @@
 #currrency .form-group {
     margin-bottom: 15px;
     position: relative;
+    
 }
 
 #currrency .btn--danger {
@@ -148,15 +148,11 @@
 #currrency .btn--danger:hover {
     background-color: #e73d3e !important;
 }
-#currrency .form-group label {
-    font-size: 0.85rem;
-    font-weight: 500;
-    margin-bottom: 5px;
-}
-#currrency .toggle.btn {
+
+#currrency .toggle .btn {
     height: 45px !important;
 }
-.toggle-on.btn, .toggle-off.btn {
+#currrency .toggle-on .btn, .toggle-off .btn {
     line-height: 32px;
 }
 #currrency .toggle-group {
@@ -174,19 +170,8 @@
 
 }
 
-input:not([type="radio"]), textarea {
-    padding: 10px 20px;
-    border-radius: 5px;
-    background-color: transparent;
-    font-size: 0.875rem !important;
-    outline: none;
-}
-input[type="radio"], input[type="range"], input[type="checkbox"] {
-    padding: 0;
-    outline: none;
-}
-.toggle input[type=checkbox] {
-    display: none;
+.toggle_button{
+    margin-left: 9px;
 }
 
 #currrency .toggle-off {
@@ -223,3 +208,61 @@ input[type="radio"], input[type="range"], input[type="checkbox"] {
     transition: all 0.3s;
     font-size: 0.875rem;
 }
+
+
+
+/* ========modal start  */
+#currrency .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1055;
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    outline: 0;
+}
+#currrency .modal .modal-dialog {
+    max-width: 400px;
+}
+
+#currrency .modal .modal-content {
+    border-radius: 3px;
+}
+#currrency .modal .modal-header, .modal .modal-body, .modal .modal-footer {
+    padding: 20px 30px;
+}
+
+#currrency .modal .modal-header, .modal .modal-body, .modal .modal-footer {
+    padding: 20px 30px;
+}
+#currrency .modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+    outline: 0;
+}
+#currrency .modal-header {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    border-bottom: 1px solid #dee2e6;
+    border-top-left-radius: calc(.3rem - 1px);
+    border-top-right-radius: calc(.3rem - 1px);
+}
+#currrency .modal .close {
+    background: transparent;
+}
+
+
+/* ========modal end */

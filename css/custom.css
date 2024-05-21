@@ -107,7 +107,7 @@ a:focus {
 .wrapper {
   position: relative;
   width: 100%;
-  overflow: auto;
+
 }
 
 /* ---------------------------------------------------
@@ -145,12 +145,12 @@ width: 4px;
 }
 
 #sidebar .sidebar-header {
-  padding: 20px;
+  padding: 11px;
   background: var(--primary-color);
   border-bottom: 1px solid var(--secondary-color);
 }
 
-.sidebar-header h3 {
+#sidebar .sidebar-header h3 {
   color: white;
   font-size: 17px;
   margin: 0px;
@@ -159,7 +159,7 @@ width: 4px;
   font-weight: 600;
 }
 
-.sidebar-header h3 img {
+#sidebar .sidebar-header h3 img {
   width: 45px;
   margin-right: 10px;
 }
@@ -255,34 +255,36 @@ width: 4px;
 }
 
 .nav-search {
+  position: relative; /* Ensure the container is the positioned ancestor */
   margin-left: 80px;
   align-items: center;
-  margin-top: 7px;
-  position: relative;
+
 }
 
-.nav-search .search-icon {
+.nav-search .search-icon i {
   position: absolute;
   left: 20px;
   top: 50%;
   transform: translateY(-50%);
   font-size: 16px;
   color: white;
-  
+  align-items: center;
 }
 
 .nav-search input {
   width: 100%;
-  padding-right: 30px; /* Make space for the search icon */
-  outline: none;
-  padding-top: 4px;
-  padding-bottom: 4px;
+  padding-right: 26px; /* Make space for the search icon */
+  padding-top: 3px;
+  padding-bottom: 3px;
   padding-left: 50px;
+  outline: none;
   color: white;
-  background-color: var(--primary-color);
-  border: 2px solid var(--secondary-color);
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 1px solid white;
   border-radius: 4px;
-  box-shadow: 5px 5px 5px rgba(var(--secondary-color), 0.3);
+  align-items: center;
+  forced-color-adjust: var(--primary-color-rgba);
+ 
 }
 
 .navbar button {
@@ -323,6 +325,13 @@ width: 4px;
 .navbar-nav > li > a {
   color: #ffffff;
 }
+.navbar-nav{
+  display: flex !important;
+  justify-content: flex-end !important;
+  gap: 2rem; /* Adjust the gap as needed */
+  align-items: center;
+}
+
 
 .navbar .notification {
   position: absolute;
@@ -342,7 +351,8 @@ width: 4px;
 }
 
 .navbar-nav > li.show .dropdown-menu {
-  transform: translate3d(0, 0, 0);
+  right: 0;
+  top: 60px;
   opacity: 1;
   visibility: visible;
   padding-left: 20px;
@@ -539,9 +549,13 @@ padding-left: 6px;
   
   .widget-two__content{
     color: var(--main-content-color);
-    margin: 10px 0px;
+    margin: 10px 0px;  
     
-    
+  }
+  .widget-two__content h4{
+    font-size: 1.25em; 
+    font-weight: 600;
+    margin: 0;
   }
   
 
@@ -691,6 +705,10 @@ padding-left: 6px;
 }
 /*===============small-screen overlay sidebar design media queries==============*/
 @media (max-width:768px){
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+  }
   .nav-search { 
    align-items: center;
    margin-right: 35px;
@@ -700,12 +718,14 @@ padding-left: 6px;
     display: block !important;
   
  }
- .top-navbar {
-  padding: 10px;
-}
+
 .nav-search input {
   width: 100%;
 }
+.widget-two__content h4 {
+  font-size: 1.1em; /* Smaller for mobile devices */
+}
+
 }
 
 
@@ -761,7 +781,7 @@ margin-bottom: 30px;
 }
 .table-title input{
   outline: none;
-  border-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
   padding: 5px 25px;
   align-items: center;
   border-radius: 4px;
@@ -895,6 +915,8 @@ table.table td:last-child i {
 table.table td a {
   font-weight: bold;
   outline: none !important; 
+  text-align: center;
+  margin-top: 3px;
 }
 
 table.table td a:hover {
@@ -973,6 +995,7 @@ table.table td a:hover {
     margin-bottom: 20px;
     
   }
+ 
  
 
 }
@@ -1062,3 +1085,4 @@ font-weight: normal;
 /*=======================================================
    404 page end
    ===============================================*/
+/* Ensure navbar items are aligned to the right on small devices */

@@ -1,10 +1,10 @@
 
 /* exchange button colloction start*/
-#exchange .exchange-btn a i{
+#exchange-two  .exchange-btn a i{
     margin-right: 8px;
 
 }
-#exchange .exchange-btn1{
+#exchange-two  .exchange-btn1{
     padding: 2px 8px;
     border: 1px solid var( --primary-color) ;
     background-color: transparent;
@@ -13,11 +13,11 @@
     color: var( --primary-color);
     transition: all .3s ease;
 }
-#exchange .exchange-btn1:hover{
+#exchange-two  .exchange-btn1:hover{
     background-color: var(--primary-color);
     color: white;
 }
-#exchange .exchange-btn2{
+#exchange-two  .exchange-btn2{
     padding: 2px 8px;
     border: 1px solid var(--primary-color-rgba) ;
     background-color: transparent;
@@ -26,41 +26,54 @@
     color: var(--primary-color-rgba);
     transition: all .3s ease;
 }
-#exchange .exchange-btn2:hover{
+#exchange-two  .exchange-btn2:hover{
     background-color: var(--primary-color-rgba);
     color: white;
 }
+#exchange-two  .exchange-btn3{
+    padding: 2px 8px;
+    border: 1px solid var(--quaternary-color) ;
+    background-color: transparent;
+    display: block;
+    border-radius: 4px;
+    color: var(--quaternary-color);
+    transition: all .3s ease;
+}
+#exchange-two  .exchange-btn3:hover{
+    background-color: var(--quaternary-color);
+    color: white;
+}
 /* exchange button colloction end*/
-#exchange .bodywrapper__inner {
+#exchange-two  .bodywrapper__inner {
     padding: 30px;
     transition: all 0.5s cubic-bezier(0.4, -0.25, 0.25, 1.1);
 }
-#exchange .page-title {
+#exchange-two  .page-title {
     font-size: 1.125rem;
     display: inline-block;
 }
 
 
 /* card style */
-#exchange .card {
+#exchange-two  .card {
     border: none;
     box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, 0.03);
     border-radius: 5px;
 
 }
 
-#exchange .card-header {
+#exchange-two  .card-header {
     background-color: transparent;
     border-bottom: 1px solid rgba(140, 140, 140, 0.125);
 }
 
-#exchange h1, h2, h3, h4, h5, h6 {
+#exchange-two  h1, h2, h3, h4, h5, h6 {
     font-weight: 500;
     color: #34495e;
     margin: 0;
     line-height: 1.4;
 }
-#exchange .badge--success {
+#exchange-two  .badge--success {
     background-color: rgba(40, 199, 111, 0.1);
     border: 1px solid #28c76f;
     color: #28c76f;
@@ -71,3 +84,25 @@
    
 }
 
+
+#exchange-two  .badge--warning {
+    background-color: rgba(255, 159, 67, 0.1);
+    border: 1px solid #ff9f43;
+    color: #ff9f43;
+    border-radius: 999px;
+    padding: 2px 15px;
+    position: relative;
+    text-align: center; 
+    
+}
+
+#exchange-two .badge {
+    font-size: 0.75rem !important;
+    font-weight: 300;
+    text-align: center;
+}
+
+#exchange-two .card-header {
+    background-color: transparent;
+    border-bottom: 1px solid rgba(140, 140, 140, 0.125);
+}
