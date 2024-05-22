@@ -1,4 +1,11 @@
 
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
 /* manage currency button colloction start*/
 #currrency .currrency-btn a i{
     margin-right: 8px;
@@ -132,9 +139,6 @@ element.style {
     margin-left: 2px;
 }
 
-#currrency .toggle-on.btn, #currrency .toggle-off.btn {
-    line-height: 32px;
-}
 #currrency .btn--success {
     background-color: #28c76f !important;
 }

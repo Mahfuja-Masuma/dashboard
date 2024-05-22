@@ -16,7 +16,7 @@ html {
 p {
   font-size: 15px;
   margin: 8px 0 0;
-  line-height: 24px;
+
 }
 
 a {
@@ -66,30 +66,7 @@ a:focus {
     url(https://example.com/MaterialIcons-Regular.ttf) format("truetype");
 }
 
-.material-icons {
-  font-family: "Material Icons";
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px; /* Preferred icon size */
-  display: inline-block;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
 
-  /* Support for all WebKit browsers. */
-  -webkit-font-smoothing: antialiased;
-  /* Support for Safari and Chrome. */
-  text-rendering: optimizeLegibility;
-
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
-
-  /* Support for IE. */
-  font-feature-settings: "liga";
-}
 
 /*=======================================================
   material-icons  copy & paste form site google material-icons
@@ -158,12 +135,14 @@ width: 4px;
   color: white;
   background-color: var(--secondary-color);
   width: 100%!important;
+  align-items: center;
 }
 
 #sidebar ul li a:hover {
   color: white;
   background-color: var(--primary-color-rgba);
   width: 100%!important; 
+  align-items: center;
 }
 
 .dropdown-toggle::after {
@@ -180,6 +159,7 @@ width: 4px;
 
 #sidebar ul.components {
   padding: 20px 0;
+  align-items: center;
   
   
 }
@@ -202,15 +182,16 @@ width: 4px;
   text-transform: capitalize;
   display: inline-block;
   margin-left: 3px;
+  align-items: center;
 }
 
 #sidebar ul li a i {
   position: relative;
   margin-right: 10px;
-  top: 7px;
   color: white;
   margin-left: 10px;
   align-items: center;
+  top: 6px;
 }
 
 /* ---------------------------------------------------
@@ -306,6 +287,7 @@ width: 4px;
 #sidebarCollapse span {
   margin: 9px;
   padding: 0px;
+  align-items: center;
 }
 
 /* Initially hide mobile menu icon */
@@ -332,6 +314,8 @@ width: 4px;
   color: #ffffff;
   border-radius: 4px;
   background-color: rgba(0, 0, 0, 0.08);
+  text-align: center;
+  align-items: center;
 }
 
 .navbar-nav > li > a {
@@ -670,6 +654,7 @@ padding-left: 6px;
     float: left!important;
     bottom: 0!important;
     background-color: var(--primary-color)!important;
+
 }
   #sidebar.active .sidebar-header h3 span {
     display: none;
@@ -679,6 +664,8 @@ padding-left: 6px;
   #sidebar.active ul li a span {
     display: none;
     transition: all 0.5s ease;
+    text-align: center;
+    align-items: center;
   }
 
   #sidebar.active .dropdown-toggle::after {
