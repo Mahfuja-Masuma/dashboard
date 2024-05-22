@@ -2,29 +2,20 @@
 
 body,
 html {
-  line-height: 1.8;
-  font-family: "Roboto", sans-serif;
+  
+  font-family: "Poppins", sans-serif;
   color: #555e58;
   text-transform: capitalize;
-  text-rendering: optimizeLegibility !important;
-  -webkit-font-smoothing: antialiased !important;
-  font-weight: 400;
   margin: 0px;
   padding: 0px;
 }
 
 
-.h1,
-.h2,
-.h3,
-.h4 {
-  font-weight: 400;
-  line-height: 1.5em;
-}
+
 
 p {
   font-size: 15px;
-  margin: 12px 0 0;
+  margin: 8px 0 0;
   line-height: 24px;
 }
 
@@ -113,7 +104,6 @@ a:focus {
 /* ---------------------------------------------------
     SIDEBAR STYLE start
 ----------------------------------------------------- */
-
 #sidebar {
   position: fixed;
   height: 100vh !important;
@@ -122,14 +112,12 @@ a:focus {
   left: 0;
   z-index: 11;
   width: 260px;
-  /* overflow: auto; */
-  overflow-y: scroll;
-  border-right: 1px solid var(--secondary-color);
+  overflow: auto;
   transition: all 0.3s;
-  background: var(--primary-color);
- 
+  background-color: var(--primary-color); /* Set sidebar background color to primary color */
 }
 
+/* Other styles remain the same */
 
 
 #sidebar::-webkit-scrollbar{
@@ -145,9 +133,11 @@ width: 4px;
 }
 
 #sidebar .sidebar-header {
-  padding: 11px;
+  padding: 10px 7px;
   background: var(--primary-color);
   border-bottom: 1px solid var(--secondary-color);
+  border-right: 1px solid var(--secondary-color);
+  
 }
 
 #sidebar .sidebar-header h3 {
@@ -211,6 +201,7 @@ width: 4px;
 #sidebar ul li a span {
   text-transform: capitalize;
   display: inline-block;
+  margin-left: 3px;
 }
 
 #sidebar ul li a i {
@@ -242,6 +233,7 @@ width: 4px;
   position: relative;
   
 }
+
 
 .main-content {
   padding: 10px 20px 0px 20px;
@@ -316,6 +308,26 @@ width: 4px;
   padding: 0px;
 }
 
+/* Initially hide mobile menu icon */
+#sidebar.show-nav, .body-overlay.show-nav{
+	transform:translatex(0%);
+	opacity:1;
+	display:block;
+	visibility:visible;
+	z-index:15;
+}
+#sidebar .sidebar-header{
+  position: relative;
+}
+#sidebar .sidebar-header .xp-navbar {
+   display: none;
+   position: absolute;
+   top: 6px;
+   right: -16px;
+   font-size: 20px;
+}
+
+
 .navbar-nav > li.active {
   color: #ffffff;
   border-radius: 4px;
@@ -351,6 +363,7 @@ width: 4px;
 }
 
 .navbar-nav > li.show .dropdown-menu {
+  transform: translate3d(0, 0, 0);
   right: 0;
   top: 60px;
   opacity: 1;
@@ -458,20 +471,33 @@ padding-left: 6px;
     background-color: var(--quaternary-color);
     color: var(--text-color);
   }
+  .card-content {
+    text-align: end;
+    align-items: center !important;
+    margin-top: 9px;
+  }
   
   .card-white {
     background-color: white;
-    color: black;
+    
+  }
+  .card-white h4{
+    font-size: 18px;
+    color: #34495e;
+    font-weight: 500;
+    
+  }
+  .card-white h6{
+    font-size: 14px;
+    color: #34495e;
+    
   }
   
   .card-icon {
     font-size: 35px;
   }
   
-  .card-content {
-    text-align: end;
-  }
-  
+
   .card-icon-box {
     background-color: var(--quaternary-color);
     color: white;
@@ -519,13 +545,15 @@ padding-left: 6px;
   
   }
   
-  
+  .card-content h6{
+    font-size: 12px;
+  }
   
   /* widget Section style */
   .widget-two {
     padding: 4px 4px;
     display: flex;
-    gap: 20px;
+    gap: 14px;
     overflow: hidden;
     align-items: center;
     height: 100%;
@@ -540,11 +568,12 @@ padding-left: 6px;
   }
   
   .reserved-currency-image {
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     object-fit: cover;
-    margin-left: 20px;
+    margin-left: 6px;
+    
   }
   
   .widget-two__content{
@@ -554,7 +583,7 @@ padding-left: 6px;
   }
   .widget-two__content h4{
     font-size: 1.25em; 
-    font-weight: 600;
+    font-weight: 500;
     margin: 0;
   }
   
@@ -601,6 +630,7 @@ padding-left: 6px;
   .button_three {
     border: 1px solid var(--quinary-color);
     padding: 2px 8px;
+    padding: 2px 8px;
     font-size: 12px;
     color: var(--quinary-color);
     border-radius: 5px;
@@ -632,15 +662,15 @@ padding-left: 6px;
 @media only screen and (min-width: 992px) {
   #sidebar.active {
     width: 80px;
-    height: 100% !important;
-    position: absolute !important;
-    overflow: visible !important;
-    top: 0 !important;
+    height: 100%!important;
+    position: absolute!important;
+    overflow: visible!important;
+    top: 0!important;
     z-index: 666;
-    float: left !important;
-    bottom: 0 !important;
-  }
-
+    float: left!important;
+    bottom: 0!important;
+    background-color: var(--primary-color)!important;
+}
   #sidebar.active .sidebar-header h3 span {
     display: none;
     transition: all 0.5s ease;
@@ -661,7 +691,7 @@ padding-left: 6px;
     position: relative;
     float: right;
     transition: all 0.3s;
-    background-color: #eeeeee;
+
   }
 
   #content.active {
@@ -685,24 +715,6 @@ padding-left: 6px;
 }
 
 
-/* Initially hide mobile menu icon */
-#sidebar.show-nav, .body-overlay.show-nav{
-  transform:translatex(0%);
-  opacity:1;
-  display:block;
-  visibility:visible;
-  z-index:15;
-}
-#sidebar .sidebar-header{
-  position: relative;
-}
-#sidebar .sidebar-header .xp-navbar {
-   display: none;
-   position: absolute;
-   top: 6px;
-   right: -16px;
-   font-size: 20px;
-}
 /*===============small-screen overlay sidebar design media queries==============*/
 @media (max-width:768px){
   .navbar{
@@ -723,12 +735,27 @@ padding-left: 6px;
   width: 100%;
 }
 .widget-two__content h4 {
-  font-size: 1.1em; /* Smaller for mobile devices */
+  font-size: 1.1em !important; /* Smaller for mobile devices */
 }
 
 }
 
-
+@media only screen and (min-width:992px){
+  .dropdown-menu {
+      border: 0;
+      box-shadow: 0 2px 5px 0 rgb(0 0 0 / 26%);
+    transform: translate3d(0, -20px, 0);
+      visibility: hidden;
+    transition: all 150ms linear;
+      display: block;
+    min-width:15rem;
+    right: 0;
+      left: auto;
+      opacity: 0;
+  }
+    
+  }
+  
 @media only screen and (max-width:992px){
   #sidebar{
     position:fixed;
@@ -739,6 +766,10 @@ padding-left: 6px;
      transform:translatex(-100%);
      transition:all 150ms linear;
      box-shadow:none!important;
+     
+ 
+  
+
   }
   
   .body-overlay{
