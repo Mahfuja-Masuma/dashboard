@@ -246,7 +246,6 @@ width: 4px;
 
 .nav-search input {
   width: 100%;
-  padding-right: 26px; /* Make space for the search icon */
   padding-top: 3px;
   padding-bottom: 3px;
   padding-left: 50px;
@@ -321,12 +320,11 @@ width: 4px;
 .navbar-nav > li > a {
   color: #ffffff;
 }
-.navbar-nav{
+/* .navbar-nav{
   display: flex !important;
   justify-content: flex-end !important;
-  gap: 2rem; /* Adjust the gap as needed */
   align-items: center;
-}
+} */
 
 
 .navbar .notification {
@@ -645,20 +643,21 @@ padding-left: 6px;
 
 @media only screen and (min-width: 992px) {
   #sidebar.active {
+    position: fixed;
     width: 80px;
     height: 100%!important;
-    position: absolute!important;
     overflow: visible!important;
     top: 0!important;
     z-index: 666;
     float: left!important;
     bottom: 0!important;
-    background-color: var(--primary-color)!important;
+
+    transition: all 0.3s ease;
 
 }
   #sidebar.active .sidebar-header h3 span {
     display: none;
-    transition: all 0.5s ease;
+    transition: all 0.3s ease;
   }
 
   #sidebar.active ul li a span {
@@ -704,10 +703,7 @@ padding-left: 6px;
 
 /*===============small-screen overlay sidebar design media queries==============*/
 @media (max-width:768px){
-  .navbar{
-    display: flex;
-    justify-content: space-between;
-  }
+ 
   .nav-search { 
    align-items: center;
    margin-right: 35px;

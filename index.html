@@ -701,21 +701,17 @@
     <script src="js/script.js"></script>
 
     <script type="text/javascript">
-$(document).ready(function () {
-  $(".xp-navbar").on("click", function () {
-    $("#sidebar").toggleClass("active");
-    $("#content").toggleClass("active");
-    $(".body-overlay").toggleClass("show-nav");
-    // Toggle body overlay class for mobile view
-  });
-
-  $(".body-overlay").on("click", function () {
-    $("#sidebar").removeClass("active");
-    $("#content").removeClass("active");
-    $(this).removeClass("show-nav");
-    // Remove active classes when body overlay is clicked
-  });
-});
+	$(document).ready(function(){
+		  $(".xp-navbar").on('click',function(){
+		    $('#sidebar').toggleClass('active');
+			$('#content').toggleClass('active');
+		  });
+		  
+		   $(".xp-navbar,.body-overlay").on('click',function(){
+		     $('#sidebar,.body-overlay').toggleClass('show-nav');
+		   });
+		  
+		});
 
     </script>
   </body>
